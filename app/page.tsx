@@ -61,7 +61,9 @@ export default function Home() {
           </h2>
           <div className="text-2xl md:text-2xl my-5">a <span className={rubik.className}>dead simple</span> programming model for modern applications</div>
           <div className="mt-10">
-            <img className="mx-auto " src="/images/echo-more.png" alt="Echo" />
+            <a href="https://github.com/resonatehq/website/issues/1">
+              <img className="mx-auto" src="/images/echo-more.png" alt="Echo" />
+            </a>
           </div>
         </div>
       </section>
@@ -75,7 +77,7 @@ export default function Home() {
             same programming model, better guarantees
           </div>
           <img className="mx-auto my-16" src="/images/process.png" alt="Durable Async Await" />
-          <p className="text-xl text-center" >
+          <p className="text-xl text-center">
             Durable Async Await are Functions and Promises, that maintain progress in durable storage.
           </p>
         </div>
