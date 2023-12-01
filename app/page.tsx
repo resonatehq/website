@@ -34,6 +34,24 @@ export default function Home() {
         </div>
       </nav>
 
+      <section className="pt-20">
+        <div className="container max-w-4xl mx-auto">
+          <div className="border p-4 rounded-lg" style={{ backgroundColor: "rgb(246, 247, 249);", borderColor: "rgb(129, 143, 175);" }}>
+            <div>
+              <div className="text-color text-xl">
+                Resonate is in the <b>Design Phase</b>
+              </div>
+              <div className="text-color my-4">
+                Our code base is constantly evolving as we are exploring Resonate's programming model. If you are passionate about a <span className="dead-simple">dead simple</span> developer experience, join us on this journey of discovery and share your thoughts.
+              </div>
+              <div className="text-color text-xl">
+                <button className="py-3 px-6 rounded-lg text-white resonate-button"><a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg">Join our Slack</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20">
         <div className="container max-w-4xl mx-auto text-center">
           <h2 className="text-7xl text-center">

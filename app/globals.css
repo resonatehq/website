@@ -4,6 +4,10 @@
 
 /* Custom */
 
+.resonate-button {
+  background-image: linear-gradient(135deg, rgb(97, 113, 150) 0%, rgb(63, 73, 101) 100%);
+}
+
 .dead-simple {
   font-family: "Rubik Wet Paint";
 }
