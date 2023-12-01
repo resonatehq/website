@@ -1,4 +1,6 @@
-import Image from 'next/image'
+import { Rubik_Wet_Paint } from 'next/font/google';
+
+const rubik = Rubik_Wet_Paint({ weight: "400", subsets: ['latin'], display: 'swap' })
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
           <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
             <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+              <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
@@ -36,13 +38,13 @@ export default function Home() {
 
       <section className="pt-20">
         <div className="container max-w-4xl mx-auto">
-          <div className="border p-4 rounded-lg" style={{ backgroundColor: "rgb(246, 247, 249);", borderColor: "rgb(129, 143, 175);" }}>
+          <div className="border p-4 rounded-lg" style={{ backgroundColor: "rgb(246, 247, 249)", borderColor: "rgb(129, 143, 175)" }}>
             <div>
               <div className="text-color text-xl">
                 Resonate is in the <b>Design Phase</b>
               </div>
               <div className="text-color my-4">
-                Our code base is constantly evolving as we are exploring Resonate's programming model. If you are passionate about a <span className="dead-simple">dead simple</span> developer experience, join us on this journey of discovery and share your thoughts.
+                Our code base is constantly evolving as we are exploring Resonate&aposs programming model. If you are passionate about a <span className={rubik.className}>dead simple</span> developer experience, join us on this journey of discovery and share your thoughts.
               </div>
               <div className="text-color text-xl">
                 <button className="py-3 px-6 rounded-lg text-white resonate-button"><a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg">Join our Slack</a></button>
@@ -57,9 +59,9 @@ export default function Home() {
           <h2 className="text-7xl text-center">
             Durable Async Await
           </h2>
-          <div className="text-2xl md:text-2xl my-5">a <span className="dead-simple">dead simple</span> programming model for modern applications</div>
+          <div className="text-2xl md:text-2xl my-5">a <span className={rubik.className}>dead simple</span> programming model for modern applications</div>
           <div className="mt-10">
-            <img className="mx-auto " src="/images/echo-more.png" />
+            <img className="mx-auto " src="/images/echo-more.png" alt="Echo" />
           </div>
         </div>
       </section>
@@ -69,7 +71,7 @@ export default function Home() {
           <h2 className="text-5xl text-center">
             What is Durable Async Await?
           </h2>
-          <div className="text-2xl md:text-2xl my-5" text-center>
+          <div className="text-2xl md:text-2xl my-5 text-center">
             same programming model, better guarantees
           </div>
           <img className="mx-auto my-16" src="/images/process.png" alt="Durable Async Await" />
@@ -85,7 +87,7 @@ export default function Home() {
           <h2 className="text-5xl text-center">
             Your app, your way
           </h2>
-          <div className="text-2xl md:text-2xl my-10 text-gray-600" text-center>
+          <div className="text-2xl md:text-2xl my-10 text-gray-600 text-center">
             Resonate has an incremental path to adoption
           </div>
         </div>
