@@ -44,7 +44,7 @@ export default function Home() {
                 Resonate is in the <b>Design Phase</b>
               </div>
               <div className="text-color my-4">
-                Our code base is constantly evolving as we are exploring Resonate&aposs programming model. If you are passionate about a <span className={rubik.className}>dead simple</span> developer experience, join us on this journey of discovery and share your thoughts.
+                Our code base is constantly evolving as we are exploring Resonate&apos;s programming model. If you are passionate about a <span className={rubik.className}>dead simple</span> developer experience, join us on this journey of discovery and share your thoughts.
               </div>
               <div className="text-color text-xl">
                 <button className="py-3 px-6 rounded-lg text-white resonate-button"><a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg">Join our Slack</a></button>
