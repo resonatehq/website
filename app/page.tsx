@@ -56,7 +56,7 @@ export default function Home() {
 
     <section className="px-5 py-20">
       <div className="container max-w-4xl mx-auto text-center">
-        <h2 className="text-5xl md:text-7xl text-center">
+        <h2 className="text-3xl sm:text-5xl md:text-7xl text-center">
           Durable Async Await
         </h2>
         <div className="text-xl md:text-2xl my-5">
