@@ -7,7 +7,7 @@ export default function Home() {
     <>
     
     {/* Nav */}
-    <nav className="border-gray-200 border-b">
+    <nav className="border-gray-200 border-b dark:bg-dark-gray-700 dark:border-dark-gray-700 dark:text-white">
       <div className="flex flex-wrap items-center justify-between mx-auto px-4 py-3">
         <a href="https://resonatehq.io" className="flex items-center space-x-2 rtl:space-x-reverse">
           <img src="/images/logo.svg" alt="Resonate Logo" width="40px" />
@@ -23,9 +23,9 @@ export default function Home() {
     </nav>
 
     {/* Design phase */}
-    <section>
+    <section className="dark:bg-dark-gray-900 dark:text-white">
       <div className="container max-w-4xl mx-auto p-8">
-        <div className="border border-gray-200 bg-bright-gray-50 rounded-lg p-4">
+        <div className="border border-gray-200 bg-bright-gray-50 dark:bg-dark-gray-700 dark:border-dark-gray-600 rounded-lg p-4">
           <p className="text-xl pb-4">
             Resonate is in the <strong>Design Phase</strong>
           </p>
@@ -44,7 +44,7 @@ export default function Home() {
     </section>
 
     {/* Header and logo */}
-    <section className="text-center">
+    <section className="text-center dark:bg-dark-gray-900 dark:text-white">
       <div className="container max-w-4xl mx-auto p-16">
         <h1 className="text-4xl sm:text-5xl md:text-7xl pb-4">
           Durable Async Await
@@ -75,33 +75,33 @@ export default function Home() {
     </section>
 
     {/* Your app */}
-    <section>
+    <section className="dark:bg-dark-gray-900 dark:text-white">
       <div className="container max-w-4xl mx-auto p-16">
         <h2 className="text-3xl md:text-5xl text-center pb-4">
           Your app, your way
         </h2>
-        <p className="text-xl md:text-2xl text-gray-600 text-center pb-12">
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 text-center pb-12">
           Resonate has an incremental path to adoption
         </p>
 
         <h2 className="text-2xl mb-4">
           1. Resonate Library
         </h2>
-        <p className="text-xl text-gray-600 mb-8">
+        <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
           Get retries, rate limiting, timeouts, cancelation, metrics, and tracing. No infrastructure required.
         </p>
 
         <h2 className="text-2xl mb-4">
           2. Resonate Library + Resonate Server
         </h2>
-        <p className="text-xl text-gray-600 mb-8">
+        <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
           Run functions for minutes, hours, days, weeks, month, or years, regardless of interruptions.
         </p>
 
         <h2 className="text-2xl mb-4">
           3. Resonate Library + Resonate Server + Resonate Workers
         </h2>
-        <p className="text-xl text-gray-600">
+        <p className="text-xl text-gray-600 dark:text-gray-400">
           Run on prem, on the edge, in the cloud, or go serverless.
         </p>
 
@@ -109,7 +109,7 @@ export default function Home() {
     </section>
 
     {/* Footer */}
-    <footer className="bg-gray-50 p-8 flex flex-col items-center">
+    <footer className="bg-gray-50 dark:bg-dark-gray-800 dark:text-white p-8 flex flex-col items-center">
       <div className="pb-6">
         <a href="https://twitter.com/resonatehqio" target="_blank" rel="noopener noreferrer" aria-label="Resonate Twitter">
           <i className="bx bx-sm bxl-twitter px-4 text-link"></i>
