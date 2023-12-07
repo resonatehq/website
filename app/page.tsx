@@ -34,7 +34,9 @@ export default function Home() {
           </p>
           <div className="flex items-center justify-end">
             <button className="bg-bright-gray-500 hover:bg-bright-gray-600 text-white py-2 px-4 rounded-lg text-xl">
-              Join our slack <i className="bx bx-sm bxl-slack" style={{verticalAlign: "middle"}}></i>
+              <a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg" target="_blank" rel="noopener noreferrer" aria-label="Resonate Slack">
+                Join our slack <i className="bx bx-sm bxl-slack" style={{verticalAlign: "middle"}}></i>
+              </a>
             </button>
           </div>
         </div>
@@ -112,7 +114,7 @@ export default function Home() {
         <a href="https://twitter.com/resonatehqio" target="_blank" rel="noopener noreferrer" aria-label="Resonate Twitter">
           <i className="bx bx-sm bxl-twitter px-4 text-link"></i>
         </a>
-        <a href="https://resonatehqcommunity.slack.com" target="_blank" rel="noopener noreferrer" aria-label="Resonate Slack">
+        <a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg" target="_blank" rel="noopener noreferrer" aria-label="Resonate Slack">
           <i className="bx bx-sm bxl-slack px-4 text-link"></i>
         </a>
         <a href="https://github.com/resonatehq/resonate" target="_blank" rel="noopener noreferrer" aria-label="Resonate GitHub">
