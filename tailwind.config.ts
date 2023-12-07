@@ -8,13 +8,55 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        // from docusaurus
+        sans: [
+          'system-ui',
+          '-apple-system',
+          'Segoe UI',
+          'Roboto',
+          'Ubuntu',
+          'Cantarell',
+          'Noto Sans',
+          'sans-serif',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Helvetica',
+          'Arial',
+          'sans-serif',
+          'Apple Color Emoji',
+          'Segoe UI Emoji',
+          'Segoe UI Symbol'
+        ],
+        mono: [
+          'SFMono-Regular',
+          'Menlo',
+          'Monaco',
+          'Consolas',
+          'Liberation Mono',
+          'Courier New',
+          'monospace',
+        ],
+      },
+      colors: {
+        'link': '#617196',
+        'bright-gray': {
+          '50': '#f6f7f9',
+          '100': '#ebedf3',
+          '200': '#d3d7e4',
+          '300': '#adb6cc',
+          '400': '#818faf',
+          '500': '#617196',
+          '600': '#4c597d',
+          '700': '#3f4965',
+          '800': '#373f56',
+          '900': '#313749',
+          '950': '#212430',
+        },
       },
     },
   },
   plugins: [],
 }
+
 export default config
