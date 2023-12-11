@@ -39,7 +39,7 @@ const config: Config = {
         ],
       },
       colors: {
-        link: "#617196",
+        link: "#FF6663",
         "bright-gray": {
           "50": "#f6f7f9",
           "100": "#ebedf3",

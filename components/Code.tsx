@@ -27,7 +27,7 @@ export async function handlePurchase() {
 }`;
 
   return (
-    <div className="max-w-full bg-white shadow-colored rounded-lg overflow-auto mx-2">
+    <div className="max-w-full bg-white shadow-colored rounded-lg overflow-auto mx-2 text-sm">
       <div className="px-4 py-2 border-b font-bold text-sm">
         durable-payment.tsx
       </div>

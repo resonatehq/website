@@ -1,6 +1,7 @@
 import { Amarante } from "next/font/google";
 import Logo from "@/components/Logo";
 import Code from "@/components/Code";
+import Card from "@/components/Card";
 
 const amarante = Amarante({
   weight: "400",
@@ -10,7 +11,7 @@ const amarante = Amarante({
 
 export default function Home() {
   return (
-    <div className="flex flex-row justify-center w-screen bg-white overflow-hidden">
+    <div className="flex flex-row justify-center max-w-screen bg-white overflow-hidden">
       <div className="text-bright-gray-950 w-full max-w-[1600px] px-4 lg:px-10">
         {/* Nav */}
         <nav className="border-gray-200 bg-white">
@@ -31,7 +32,7 @@ export default function Home() {
             <div className="flex items-center space-x-4">
               <a
                 href="https://docs.resonatehq.io"
-                className="text-lg hover:text-[#FF6663]"
+                className="text-lg hover:text-link"
               >
                 Docs
               </a>
@@ -42,7 +43,7 @@ export default function Home() {
                 aria-label="Resonate GitHub"
               >
                 <i
-                  className="bx bx-md bxl-github text-bright-gray-950 hover:text-[#FF6663]"
+                  className="bx bx-md bxl-github text-bright-gray-950 hover:text-link"
                   style={{ verticalAlign: "middle" }}
                 ></i>
               </a>
@@ -50,10 +51,11 @@ export default function Home() {
           </div>
         </nav>
 
-        <section>
+        {/* Hero */}
+        <section className="overflow-hidden">
           <div className="relative overflow-hidden">
-            <div className="mx-auto flex flex-col lg:flex-row pb-80 pt-16 sm:pb-40 lg:pb-48">
-              <div className="flex-auto place-self-center mr-10 mb-4 lg:mb-0">
+            <div className="mx-auto flex flex-col space-y-10 lg:space-y-0 lg:flex-row pb-80 pt-16 sm:pb-40 lg:pb-48">
+              <div className="flex-1 place-self-center mr-10 mb-4 lg:mb-0">
                 <h1
                   className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
                 >
@@ -63,7 +65,7 @@ export default function Home() {
                   A <span className={amarante.className}>dead simple</span>{" "}
                   programming model for modern applications
                 </p>
-                <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-[#FF6663]">
+                <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
                   <Logo className="fill-white w-8 h-8 mr-2" />
                   Join our Slack
                 </button>
@@ -72,67 +74,102 @@ export default function Home() {
               <Code />
             </div>
           </div>
-          <img
-            src="/images/echo.png"
-            className="fixed bottom-0 right-0 w-40 h-40"
-            alt="Echo"
-          />
-        </section>
-
-        {/* What is... */}
-        <section className="bg-bright-gray-600 text-center text-white">
-          <div className="container max-w-4xl mx-auto p-16">
-            <h2 className="text-3xl md:text-5xl pb-4">
-              What is Durable Async Await?
-            </h2>
-            <p className="text-xl md:text-2xl pb-4">
-              same programming model, better guarantees
-            </p>
+          <a
+            href="https://github.com/resonatehq/website/issues/1"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Echo"
+          >
             <img
-              src="/images/process.png"
-              className="mx-auto my-16"
-              alt="Durable Async Await"
+              src="/images/echo.png"
+              className="fixed bottom-0 right-0 w-40 h-40 z-10"
+              alt="Echo"
             />
-            <p className="text-xl">
-              Durable async await are functions and promises that maintain
-              progress in durable storage.
-            </p>
+          </a>
+        </section>
+
+        {/* What is Durable Async Await */}
+        <section>
+          <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
+            <div className="flex flex-col text-center w-full px-4 mb-24 lg:space-x-10 items-center">
+              <div className="">
+                <p className={`text-link ${amarante.className}`}>
+                  A new programming paradigm
+                </p>
+                <h2 className="text-3xl md:text-5xl pb-2">
+                  What is{" "}
+                  <span className={amarante.className}>
+                    Durable Async Await
+                  </span>
+                  ?
+                </h2>
+                <p>
+                  Durable async await are functions and promises that maintain
+                  progress in durable storage.
+                </p>
+                <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
+                  <Logo className="fill-white w-8 h-8 mr-2" />
+                  Learn More
+                </button>
+              </div>
+
+              <div className="flex-1 flex mt-20 items-center justify-center">
+                <img
+                  src="/images/process-navy.png"
+                  className="w-full lg:w-5/6"
+                />
+              </div>
+            </div>
           </div>
         </section>
-        {/* Your app */}
-        <section className="dark:bg-dark-gray-900 dark:text-white">
-          <div className="container max-w-4xl mx-auto p-16">
-            <h2 className="text-3xl md:text-5xl text-center pb-4">
-              Your app, your way
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 text-center pb-12">
-              Resonate has an incremental path to adoption
-            </p>
 
-            <h2 className="text-2xl mb-4">1. Resonate Library</h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-              Get retries, rate limiting, timeouts, cancelation, metrics, and
-              tracing. No infrastructure required.
-            </p>
+        {/* Incrementally Adopt Resonate */}
+        <section>
+          <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
+            <div className="flex flex-col lg:flex-row w-full px-4 mb-24 lg:space-x-10 items-center">
+              <div className="">
+                <p className={`text-link ${amarante.className}`}>
+                  Your App, Your Way
+                </p>
+                <h2 className="text-3xl md:text-5xl pb-2">
+                  Resonate has an{" "}
+                  <span className={amarante.className}>incremental path</span>{" "}
+                  to adoption
+                </h2>
+                <p>
+                  Durable async await are functions and promises that maintain
+                  progress in durable storage.
+                </p>
+                <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
+                  <Logo className="fill-white w-8 h-8 mr-2" />
+                  Read our docs
+                </button>
+              </div>
+              <div className="flex flex-col">
+                <Card
+                  className="mt-8 relative overflow-hidden flex flex-col text-start"
+                  title="1. Resonate Library"
+                  description="Get retries, rate limiting, timeouts, cancelation, metrics, and tracing. No infrastructure required."
+                />
 
-            <h2 className="text-2xl mb-4">
-              2. Resonate Library + Resonate Server
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-              Run functions for minutes, hours, days, weeks, month, or years,
-              regardless of interruptions.
-            </p>
+                <Card
+                  className="mt-8 relative overflow-hidden flex flex-col text-start"
+                  title="2. Resonate Library + Resonate Server"
+                  description="Run functions for minutes, hours, days, weeks, month, or years, regardless of interruptions."
+                />
 
-            <h2 className="text-2xl mb-4">
-              3. Resonate Library + Resonate Server + Resonate Workers
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-400">
-              Run on prem, on the edge, in the cloud, or go serverless.
-            </p>
+                <Card
+                  className="mt-8 relative overflow-hidden flex flex-col text-start"
+                  title="3. Resonate Library + Resonate Server + Resonate Workers"
+                  description="Run on prem, on the edge, in the cloud, or go serverless."
+                />
+              </div>
+            </div>
           </div>
         </section>
+
         {/* Footer */}
-        <footer className="bg-gray-50 dark:bg-dark-gray-800 dark:text-white p-8 flex flex-col items-center">
+        <footer className="bg-white p-8 flex flex-col items-center">
           <div className="pb-6">
             <a
               href="https://twitter.com/resonatehqio"
@@ -140,7 +177,7 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="Resonate Twitter"
             >
-              <i className="bx bx-sm bxl-twitter px-4 text-link"></i>
+              <i className="bx bx-sm bxl-twitter px-4 text-bright-gray-950 hover:text-link"></i>
             </a>
             <a
               href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg"
@@ -148,7 +185,7 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="Resonate Slack"
             >
-              <i className="bx bx-sm bxl-slack px-4 text-link"></i>
+              <i className="bx bx-sm bxl-slack px-4 text-bright-gray-950 hover:text-link"></i>
             </a>
             <a
               href="https://github.com/resonatehq/resonate"
@@ -156,7 +193,7 @@ export default function Home() {
               rel="noopener noreferrer"
               aria-label="Resonate GitHub"
             >
-              <i className="bx bx-sm bxl-github px-4 text-link"></i>
+              <i className="bx bx-sm bxl-github px-4 text-bright-gray-950 hover:text-link"></i>
             </a>
           </div>
           <p className="text-md">
