@@ -1,5 +1,5 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import holiTheme from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Code = () => {
   const code = `import { Resonate, Context } from "@resonatehq/sdk";
@@ -33,8 +33,8 @@ export async function handlePurchase() {
       </div>
       <div className="py-2">
         <SyntaxHighlighter
-          language="typescript"
-          style={docco}
+          language="javascript"
+          style={holiTheme}
           showLineNumbers={true}
           customStyle={{ background: "none", padding: 0 }}
         >
