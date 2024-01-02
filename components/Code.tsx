@@ -3,28 +3,32 @@ import holiTheme from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Code = () => {
   const code = `import { Resonate, Context } from "@resonatehq/sdk";
-    
-const resonate = new Resonate();
-resonate.register("durablePurchase", purchase);
-    
-async function purchase(ctx: Context, user: User, song: Song): Promise<Status> {
-  const charge = await ctx.run(chargeCreditCard, user, song);
-  const access = await ctx.run(unlockUserAccess, user, song);
-  return { charge, access };
-}
-    
-export async function handlePurchase() {
-  const user = { id: 1, name: "John" };
-  const song = { id: 1, title: "Song 1" };
-  const purchaseId = \`purchase-\${user.id}-\${song.id}\`;
 
+// 1) Initialize Resonate executor
+const resonate = new Resonate();
+
+// 2) Register an async function as a durable async function
+resonate.register("durablePurchase", purchase);
+
+async function purchase(ctx: Context, user: User, song: Song): Promise<Status> {
+  const charged = await ctx.run(charge, user, song);
+  const granted = await ctx.run(access, user, song);
+  return { charged, granted };
+}
+
+// 3) Setup logic for routing to durable async function
+app.post("/purchase", async (req: Request, res: Response) => {
+  const user = { id: req.body?.user ?? 1 };
+  const song = { id: req.body?.song ?? 1, price: 1.99 };
+
+  // 4) uniquely identify the execution
+  const id = \`purchase-\${user.id}-\${song.id}\`;
   try {
-    const result = await resonate.run("durablePurchase", purchaseId, user, song);
-    // Logic for handling successful purchase
+    res.send(await resonate.run("purchase", id, user, song));
   } catch (err) {
-    // Logic for handling purchase error
+    res.status(500).send("Could not purchase song");
   }
-}`;
+});`;
 
   return (
     <div className="max-w-full bg-white shadow-colored rounded-lg overflow-auto mx-2 text-sm">
@@ -33,7 +37,7 @@ export async function handlePurchase() {
       </div>
       <div className="py-2">
         <SyntaxHighlighter
-          language="javascript"
+          language="typescript"
           style={holiTheme}
           showLineNumbers={true}
           customStyle={{ background: "none", padding: 0 }}
