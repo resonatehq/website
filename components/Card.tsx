@@ -1,8 +1,8 @@
 // components/Card.tsx
-import { Amarante } from "next/font/google";
+import { Roboto } from "next/font/google";
 import React from "react";
 
-const amarante = Amarante({
+const amarante = Roboto({
   weight: "400",
   subsets: ["latin"],
   display: "swap",

@@ -1,10 +1,10 @@
-import { Amarante } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Logo from "@/components/Logo";
 import Code from "@/components/Code";
 import Card from "@/components/Card";
 
-const amarante = Amarante({
-  weight: "400",
+const amarante = Roboto({
+  weight: "700",
   subsets: ["latin"],
   display: "swap",
 });
@@ -65,10 +65,12 @@ export default function Home() {
                   A <span className={amarante.className}>dead simple</span>{" "}
                   programming model for modern applications
                 </p>
-                <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
-                  <Logo className="fill-white w-8 h-8 mr-2" />
-                  Join our Slack
-                </button>
+                <a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg">
+                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
+                    <Logo className="fill-white w-8 h-8 mr-2" />
+                    Join our Slack
+                  </button>
+                </a>
               </div>
 
               <Code />
@@ -107,10 +109,12 @@ export default function Home() {
                   Durable async await are functions and promises that maintain
                   progress in durable storage.
                 </p>
-                <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
-                  <Logo className="fill-white w-8 h-8 mr-2" />
-                  Learn More
-                </button>
+                <a href="https://github.com/resonatehq/website/issues/1">
+                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
+                    <Logo className="fill-white w-8 h-8 mr-2" />
+                    Learn More
+                  </button>
+                </a>
               </div>
 
               <div className="flex-1 flex mt-20 items-center justify-center">
@@ -140,10 +144,12 @@ export default function Home() {
                   Durable async await are functions and promises that maintain
                   progress in durable storage.
                 </p>
-                <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
-                  <Logo className="fill-white w-8 h-8 mr-2" />
-                  Read our docs
-                </button>
+                <a href="https://docs.resonatehq.io">
+                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
+                    <Logo className="fill-white w-8 h-8 mr-2" />
+                    Read our docs
+                  </button>
+                </a>
               </div>
               <div className="flex flex-col">
                 <Card
