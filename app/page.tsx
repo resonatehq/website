@@ -142,7 +142,7 @@ export default function Home() {
                   to adoption
                 </h2>
                 <p>
-                By extending instead of replacing async await, we've created an incremental transition from the world of concurrent programming into the world of distributed programming
+                By extending instead of replacing async await, we have created an incremental transition from the world of concurrent programming into the world of distributed programming
                 </p>
                 <a href="https://docs.resonatehq.io">
                   <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
