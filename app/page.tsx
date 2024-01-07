@@ -59,7 +59,7 @@ export default function Home() {
                 <h1
                   className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
                 >
-                  Durable Async Await
+                  Distributed Async Await
                 </h1>
                 <p className="mt-3 text-xl">
                   A <span className={amarante.className}>dead simple</span>{" "}
@@ -101,15 +101,11 @@ export default function Home() {
                 <h2 className="text-3xl md:text-5xl pb-2">
                   What is{" "}
                   <span className={amarante.className}>
-                    Durable Async Await
+                    Distributed Async Await
                   </span>
                   ?
                 </h2>
-                <p>
-                  Durable async await are functions and promises that maintain
-                  progress in durable storage.
-                </p>
-                <a href="https://github.com/resonatehq/website/issues/1">
+                <a href="https://blog.resonatehq.io/distributed-async-await">
                   <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
                     <Logo className="fill-white w-8 h-8 mr-2" />
                     Learn More
@@ -117,12 +113,17 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="flex-1 flex mt-20 items-center justify-center">
+              <div className="flex-1 flex mt-10 mb-10 items-center justify-center">
                 <img
-                  src="/images/process-navy.png"
+                  src="/images/distributed-async-await.png"
                   className="w-full lg:w-5/6"
                 />
               </div>
+
+              <p>
+                Distributed Async Await extends the async await programming model beyond the boundaries of a single process and makes distributed computing a first-class citizen.
+              </p>
+
             </div>
           </div>
         </section>
@@ -141,8 +142,7 @@ export default function Home() {
                   to adoption
                 </h2>
                 <p>
-                  Durable async await are functions and promises that maintain
-                  progress in durable storage.
+                By extending instead of replacing async await, we've created an incremental transition from the world of concurrent programming into the world of distributed programming
                 </p>
                 <a href="https://docs.resonatehq.io">
                   <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
