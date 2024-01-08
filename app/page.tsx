@@ -161,7 +161,7 @@ export default function Home() {
                 <Card
                   className="mt-8 relative overflow-hidden flex flex-col text-start"
                   title="2. Resonate Library + Resonate Server"
-                  description="Run functions for minutes, hours, days, weeks, month, or years, regardless of interruptions."
+                  description="Run functions for minutes, hours, days, weeks, month, or years, regardless of hardware or software failures."
                 />
 
                 <Card
