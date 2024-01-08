@@ -8,7 +8,7 @@ const Code = () => {
 const resonate = new Resonate();
 
 // 2) Register an async function as a durable async function
-resonate.register("durablePurchase", purchase);
+resonate.register("purchase", purchase);
 
 async function purchase(ctx: Context, user: User, song: Song): Promise<Status> {
   const charged = await ctx.run(charge, user, song);
