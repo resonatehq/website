@@ -37,6 +37,12 @@ export default function Home() {
                 Docs
               </a>
               <a
+                href="https://blog.resonatehq.io"
+                className="text-lg hover:text-link"
+              >
+                Blog
+              </a>
+              <a
                 href="https://github.com/resonatehq/resonate"
                 target="_blank"
                 rel="noopener noreferrer"
