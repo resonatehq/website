@@ -21,9 +21,9 @@ export default function Home() {
               className="flex items-center space-x-2 rtl:space-x-reverse"
             >
               <img
-                src="/images/logo-dark.svg"
+                src="/images/echo-logo.svg"
                 alt="Resonate Logo"
-                width="60px"
+                width="32px"
               />
               <span className="font-medium text-2xl whitespace-nowrap">
                 Resonate
@@ -41,6 +41,15 @@ export default function Home() {
                 className="text-lg hover:text-link"
               >
                 Blog
+              </a>
+              <a
+                href="https://resonatehq.io/subscribe"
+                target="_blank"
+                className="text-lg hover:text-link"
+              >
+                <button className="rounded-3xl px-3 py-0.5 bg-bright-gray-950 text-white hover:bg-link">
+                  Subscribe
+                </button>
               </a>
               <a
                 href="https://github.com/resonatehq/resonate"
@@ -72,8 +81,7 @@ export default function Home() {
                   programming model for modern applications
                 </p>
                 <a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg">
-                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
-                    <Logo className="fill-white w-8 h-8 mr-2" />
+                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-bright-gray-950 text-white hover:bg-link">
                     Join our Slack
                   </button>
                 </a>
@@ -112,8 +120,7 @@ export default function Home() {
                   ?
                 </h2>
                 <a href="https://blog.resonatehq.io/distributed-async-await">
-                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
-                    <Logo className="fill-white w-8 h-8 mr-2" />
+                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-bright-gray-950 text-white hover:bg-link">
                     Learn More
                   </button>
                 </a>
@@ -151,8 +158,7 @@ export default function Home() {
                 By extending instead of replacing async await, we have created an incremental transition from the world of concurrent programming into the world of distributed programming
                 </p>
                 <a href="https://docs.resonatehq.io">
-                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-2.5 py-1 bg-bright-gray-950 text-white hover:bg-link">
-                    <Logo className="fill-white w-8 h-8 mr-2" />
+                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-bright-gray-950 text-white hover:bg-link">
                     Read our docs
                   </button>
                 </a>
