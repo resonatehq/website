@@ -97,7 +97,7 @@ export default function Home() {
             aria-label="Echo"
           >
             <img
-              src="/images/echo.png"
+              src="/images/echo-peek.png"
               className="fixed bottom-0 right-0 w-40 h-40 z-10"
               alt="Echo"
             />
