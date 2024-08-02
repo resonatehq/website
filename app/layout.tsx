@@ -36,7 +36,7 @@ export default function RootLayout({
             gtag('config', 'G-0660YY8LZF');
           `}
         </Script>
-        <Script>
+        <Script id="fullstory-script">
           {`
           window['_fs_host'] = 'fullstory.com';
           window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
