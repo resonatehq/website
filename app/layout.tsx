@@ -68,7 +68,7 @@ export default function RootLayout({
       </Script>
       <Script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3729059.js"></Script>
       <Script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></Script>
-      <Script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></Script>
+      <Script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js"></Script>
 
       <body className="dark:bg-dark-gray-900">{children}
       
