@@ -3,6 +3,7 @@ import Script from 'next/script'
 // import { Inter } from 'next/font/google'
 import '../public/css/style.css'
 import '../public/css/boxicons.min.css'
+import CookieBanner from '../components/CookieBanner'
 
 // const inter = Inter({ subsets: ['latin'] })
 
@@ -60,18 +61,9 @@ export default function RootLayout({
         }(window,document,window._fs_namespace,"script",window._fs_script);
         `}
       </Script>
-      <Script id="cookie-banner" type="text/javascript">
-        {`
-        var _iub = _iub || [];
-        _iub.csConfiguration = {"siteId":3729059,"cookiePolicyId":19395972,"lang":"en"};
-        `}
-      </Script>
-      <Script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3729059.js"></Script>
-      <Script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></Script>
-      <Script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js"></Script>
-
-      <body className="dark:bg-dark-gray-900">{children}
       
+      <body className="dark:bg-dark-gray-900">{children}
+        <CookieBanner />
       </body>
     </html>
   )
