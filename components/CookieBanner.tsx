@@ -14,9 +14,16 @@ const CookieBanner = () => {
   }, []);
 
   const acceptCookies = () => {
-    // Set cookie
-    document.cookie = "resonatehq_cookie_banner_consent=true; path=/; max-age=31536000";
+    // Set cookie for the root domain
+    const rootDomain = getRootDomain();
+    document.cookie = `resonatehq_cookie_banner_consent=true; path=/; domain=${rootDomain}; max-age=31536000; SameSite=Lax`;
     setShowBanner(false);
+  };
+
+  // Function to get the root domain
+  const getRootDomain = () => {
+    const hostParts = window.location.hostname.split('.');
+    return hostParts.slice(-2).join('.');
   };
 
   if (!showBanner) return null;
