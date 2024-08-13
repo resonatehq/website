@@ -74,15 +74,28 @@ export default function Home() {
                 <h1
                   className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
                 >
-                  Distributed Async Await
+                  Distributed
                 </h1>
-                <p className="mt-3 text-xl">
+                <h1
+                  className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
+                >
+                  Async Await
+                </h1>
+                <p className="mt-3 text-2xl">
                   A <span className={amarante.className}>dead simple</span>{" "}
-                  programming model for modern applications
+                  cloud programming model.
                 </p>
-                <a href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg">
+                <p className="mt-2 text-xl">
+                  <a href="https://github.com/resonatehq">Open source</a>.{" "}
+                  <a href="https://github.com/resonatehq/durable-promise-specification">
+                    Open specification
+                  </a>
+                  .
+                </p>
+
+                <a href="https://discord.gg/rkRbrDsp">
                   <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-bright-gray-950 text-white hover:bg-link">
-                    Join our Slack
+                    Join our Discord
                   </button>
                 </a>
               </div>
@@ -134,9 +147,10 @@ export default function Home() {
               </div>
 
               <p>
-                Distributed Async Await extends the async await programming model beyond the boundaries of a single process and makes distributed computing a first-class citizen.
+                Distributed Async Await extends the async await programming
+                model beyond the boundaries of a single process and makes
+                distributed computing a first-class citizen.
               </p>
-
             </div>
           </div>
         </section>
@@ -155,7 +169,9 @@ export default function Home() {
                   to adoption
                 </h2>
                 <p>
-                By extending instead of replacing async await, we have created an incremental transition from the world of concurrent programming into the world of distributed programming
+                  By extending instead of replacing async await, we have created
+                  an incremental transition from the world of concurrent
+                  programming into the world of distributed programming
                 </p>
                 <a href="https://docs.resonatehq.io">
                   <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-bright-gray-950 text-white hover:bg-link">
@@ -193,23 +209,23 @@ export default function Home() {
               href="https://twitter.com/resonatehqio"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Resonate Twitter"
+              aria-label="Resonate HQ Twitter"
             >
               <i className="bx bx-sm bxl-twitter px-4 text-bright-gray-950 hover:text-link"></i>
             </a>
             <a
-              href="https://join.slack.com/t/resonatehqcommunity/shared_invite/zt-22h6iu4m8-2Tl9M25IZduNU_sBcPteMg"
+              href="https://discord.gg/rkRbrDsp"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Resonate Slack"
+              aria-label="Resonate HQ Discord"
             >
-              <i className="bx bx-sm bxl-slack px-4 text-bright-gray-950 hover:text-link"></i>
+              <i className="bx bx-sm bxl-discord px-4 text-bright-gray-950 hover:text-link"></i>
             </a>
             <a
               href="https://github.com/resonatehq/resonate"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Resonate GitHub"
+              aria-label="Resonate HQ GitHub"
             >
               <i className="bx bx-sm bxl-github px-4 text-bright-gray-950 hover:text-link"></i>
             </a>
