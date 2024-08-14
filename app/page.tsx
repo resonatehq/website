@@ -26,7 +26,7 @@ export default function Home() {
                 width="32px"
               />
               <span className="font-medium text-2xl whitespace-nowrap">
-                Resonate
+                Resonate HQ
               </span>
             </a>
             <div className="flex items-center space-x-4">
@@ -122,19 +122,16 @@ export default function Home() {
           <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
             <div className="flex flex-col text-center w-full px-4 mb-24 lg:space-x-10 items-center">
               <div className="">
-                <p className={`text-link ${amarante.className}`}>
-                  A new programming paradigm
+                <p className={`text-link text-xl`}>
+                  Concurrent, distributed, and durable
                 </p>
                 <h2 className="text-3xl md:text-5xl pb-2">
-                  What is{" "}
-                  <span className={amarante.className}>
-                    Distributed Async Await
-                  </span>
-                  ?
+                  <span className={amarante.className}>Promises</span> and{" "}
+                  <span className={amarante.className}>Functions</span>
                 </h2>
-                <a href="https://blog.resonatehq.io/distributed-async-await">
+                <a href="https://docs.resonatehq.io/">
                   <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-bright-gray-950 text-white hover:bg-link">
-                    Learn More
+                    Get started
                   </button>
                 </a>
               </div>
