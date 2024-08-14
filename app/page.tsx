@@ -138,7 +138,7 @@ export default function Home() {
 
               <div className="flex-1 flex mt-10 mb-10 items-center justify-center">
                 <img
-                  src="/images/distributed-async-await.png"
+                  src="/images/async-call-graph.svg"
                   className="w-full lg:w-5/6"
                 />
               </div>
