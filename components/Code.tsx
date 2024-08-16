@@ -1,13 +1,14 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import holiTheme from "react-syntax-highlighter/dist/esm/styles/prism";
+import { nord } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const Code = () => {
-  const code = `import { Resonate, Context } from "@resonatehq/sdk";
+  const code = `// durable-payment.ts
+import { Resonate, Context } from "@resonatehq/sdk";
 
 // 1) Initialize Resonate executor
 const resonate = new Resonate();
 
-// 2) Register an async function as a durable async function
+// 2) Register purchase as a durable async function
 resonate.register("purchase", purchase);
 
 async function purchase(ctx: Context, user: User, song: Song): Promise<Status> {
@@ -24,6 +25,7 @@ app.post("/purchase", async (req: Request, res: Response) => {
   // 4) uniquely identify the execution
   const id = \`purchase-\${user.id}-\${song.id}\`;
   try {
+    // 5) Call the purchase function and wait for the result
     res.send(await resonate.run("purchase", id, user, song));
   } catch (err) {
     res.status(500).send("Could not purchase song");
@@ -31,20 +33,19 @@ app.post("/purchase", async (req: Request, res: Response) => {
 });`;
 
   return (
-    <div className="max-w-full bg-white shadow-colored rounded-lg overflow-auto mx-2 text-sm">
-      <div className="px-4 py-2 border-b font-bold text-sm">
-        durable-payment.ts
-      </div>
-      <div className="py-2">
-        <SyntaxHighlighter
-          language="typescript"
-          style={holiTheme}
-          showLineNumbers={true}
-          customStyle={{ background: "none", padding: 0 }}
-        >
-          {code}
-        </SyntaxHighlighter>
-      </div>
+    <div className="overflow-auto text-sm">
+      <SyntaxHighlighter
+        language="typescript"
+        style={nord}
+        showLineNumbers={false}
+        customStyle={{
+          background: "rgb(24 24 27)",
+          padding: "22px",
+          borderRadius: 0,
+        }}
+      >
+        {code}
+      </SyntaxHighlighter>
     </div>
   );
 };
