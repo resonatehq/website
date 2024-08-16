@@ -194,10 +194,10 @@ export default function Home() {
                 </p>
                 <p className="text-xl font-light mt-2">
                   {" "}
-                  offers you an{" "}
+                  offers you an
                   <span className={`mx-2 ${amarante.className}`}>
                     incremental transition
-                  </span>{" "}
+                  </span>
                   from the world of concurrent programming
                 </p>
                 <p className="text-xl font-light mt-2">
