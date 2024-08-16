@@ -235,6 +235,7 @@ export default function Home() {
                     title="Deploy anywhere"
                     descriptionOne="Then"
                     descriptionTwo="Run on prem, on the edge, in the cloud, or go serverless."
+                    descriptionThree=""
                   />
                 </div>
               </div>

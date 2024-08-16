@@ -8,7 +8,20 @@ const amarante = Roboto({
   display: "swap",
 });
 
-const InstallationSection = ({ title, tabs }) => {
+interface Tab {
+  label: string;
+  command: string;
+}
+
+interface InstallationSectionProps {
+  title: string;
+  tabs: Tab[];
+}
+
+const InstallationSection: React.FC<InstallationSectionProps> = ({
+  title,
+  tabs,
+}) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (

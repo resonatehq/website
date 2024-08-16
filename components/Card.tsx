@@ -10,7 +10,9 @@ const amarante = Roboto({
 
 interface CardProps {
   title?: string;
-  description?: string;
+  descriptionOne?: string;
+  descriptionTwo?: string;
+  descriptionThree?: string;
   className?: string;
   children?: React.ReactNode;
 }

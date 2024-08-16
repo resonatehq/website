@@ -10,7 +10,17 @@ const amarante = Roboto({
   display: "swap",
 });
 
-const CodeSection = ({ title, tabs }) => {
+interface Tab {
+  label: string;
+  code: string;
+}
+
+interface CodeSectionProps {
+  title: string;
+  tabs: Tab[];
+}
+
+const CodeSection: React.FC<CodeSectionProps> = ({ title, tabs }) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
