@@ -88,11 +88,11 @@ const InstallationGuide = () => {
 
   const serverTabs = [
     { label: "macOS", command: "brew install resonate" },
-    {
-      label: "Linux",
-      command:
-        "curl -Lo resonate_linux_x86_64.tar.gz https://github.com/your-repo/releases/download/v1.0.0/resonate_linux_x86_64.tar.gz && curl -Lo resonate_linux_x86_64.tar.gz.sha256 https://github.com/your-repo/releases/download/v1.0.0/resonate_linux_x86_64.tar.gz.sha256 && sha256sum -c resonate_linux_x86_64.tar.gz.sha256",
-    },
+    // {
+    //   label: "Linux",
+    //   command:
+    //     "curl -Lo resonate_linux_x86_64.tar.gz https://github.com/your-repo/releases/download/v1.0.0/resonate_linux_x86_64.tar.gz && curl -Lo resonate_linux_x86_64.tar.gz.sha256 https://github.com/your-repo/releases/download/v1.0.0/resonate_linux_x86_64.tar.gz.sha256 && sha256sum -c resonate_linux_x86_64.tar.gz.sha256",
+    // },
     // { label: "Windows", command: "choco install resonate" },
     // Add more tabs here if needed
   ];
