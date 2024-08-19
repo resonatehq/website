@@ -9,3 +9,7 @@
     0 10px 20px -5px rgba(var(--tw-shadow-color), 0.1),
     0 20px 25px -5px rgba(var(--tw-shadow-color), 0.1);
 }
+
+.ask-echo {
+  cursor: pointer;
+}
