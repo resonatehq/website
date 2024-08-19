@@ -101,6 +101,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <img
+              src="/images/echo-peek.png"
+              className="fixed bottom-0 right-0 w-40 h-40 z-10 ask-echo"
+              alt="Echo"
+            />
           </section>
 
           {/* Installation */}
