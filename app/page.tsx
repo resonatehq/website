@@ -2,6 +2,7 @@ import { Roboto } from "next/font/google";
 import Logo from "@/components/Logo";
 import Code from "@/components/Code";
 import Card from "@/components/Card";
+import NavBar from "@/components/NavBar";
 import InstallationGuide from "@/components/InstallationGuide";
 import CodeGuide from "@/components/CodeGuide";
 
@@ -15,59 +16,14 @@ export default function Home() {
   return (
     <div className="flex flex-col max-w-screen bg-white overflow-hidden">
       {/* Nav */}
-      <nav className="border-zinc-200 bg-white px-4 lg:px-10">
-        <div className="flex flex-wrap items-center justify-between mx-auto py-5">
-          <a
-            href="https://resonatehq.io"
-            className="flex items-center space-x-2 rtl:space-x-reverse"
-          >
-            <img src="/images/echo-logo.svg" alt="Resonate Logo" width="32px" />
-            <span className="font-medium text-2xl whitespace-nowrap">
-              Resonate HQ
-            </span>
-          </a>
-          <div className="flex items-center space-x-4">
-            <a
-              href="https://docs.resonatehq.io"
-              className="text-lg font-light hover:text-zinc-900"
-            >
-              Docs
-            </a>
-            <a
-              href="https://blog.resonatehq.io"
-              className="text-lg font-light hover:text-zinc-900"
-            >
-              Blog
-            </a>
-            <a
-              href="https://resonatehq.io/subscribe"
-              target="_blank"
-              className="text-lg font-light hover:text-zinc-900"
-            >
-              <button className="rounded-3xl px-3 py-0.5 bg-zinc-900 text-white hover:bg-zinc-500">
-                Subscribe
-              </button>
-            </a>
-            <a
-              href="https://github.com/resonatehq/resonate"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Resonate GitHub"
-            >
-              <i
-                className="bx bx-md bxl-github text-zinc-900 hover:text-zinc-900"
-                style={{ verticalAlign: "middle" }}
-              ></i>
-            </a>
-          </div>
-        </div>
-      </nav>
+      <NavBar />
+
       <div className="flex flex-row justify-center w-full">
         <div className="text-zinc-900 w-full max-w-[1600px] px-4 lg:px-10">
           {/* Hero */}
           <section className="overflow-hidden">
             <div className="relative overflow-hidden">
-              <div className="mx-auto flex flex-col items-center space-y-10 lg:pb-48 md:pb-24 pt-16">
+              <div className="mx-auto flex flex-col items-center lg:pb-48 md:pb-24 pt-16">
                 <div className="text-center">
                   <h1
                     className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
@@ -82,11 +38,18 @@ export default function Home() {
                   <p className="mt-3 font-light text-2xl">
                     A{" "}
                     <span className={`mx-2 ${amarante.className}`}>
+                      durable execution
+                    </span>{" "}
+                    framework.
+                  </p>
+                  <p className="mt-3 font-light text-2xl">
+                    A{" "}
+                    <span className={`mx-2 ${amarante.className}`}>
                       dead simple
                     </span>{" "}
                     cloud programming model.
                   </p>
-                  <p className="mt-2 font-light text-xl">
+                  <p className="mt-3 font-light text-xl">
                     <a href="https://github.com/resonatehq">Open source</a>.{" "}
                     <a href="https://github.com/resonatehq/durable-promise-specification">
                       Open specification
@@ -94,7 +57,7 @@ export default function Home() {
                     .
                   </p>
                   <a href="https://discord.gg/rkRbrDsp">
-                    <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
+                    <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Join the Discord Community
                     </button>
                   </a>
@@ -130,7 +93,7 @@ export default function Home() {
                     <span className={amarante.className}>Functions</span>
                   </h2>
 
-                  <p className="text-xl font-light">
+                  <p className="text-xl mt-3 font-light">
                     Distributed Async Await
                     <span className={`mx-2 ${amarante.className}`}>
                       extends
@@ -138,21 +101,21 @@ export default function Home() {
                     the async await programming model
                   </p>
 
-                  <p className="text-xl font-light">
+                  <p className="text-xl mt-3 font-light">
                     <span className={`mx-2 ${amarante.className}`}>beyond</span>
                     the boundaries of a single process.
                   </p>
 
-                  <p className="text-xl font-light mt-2">
+                  <p className="text-xl font-light mt-3">
                     Distributed computing becomes a
                     <span className={`mx-2 ${amarante.className}`}>
                       first-class
                     </span>
                     citizen.
                   </p>
-                  <a href="https://docs.resonatehq.io/">
-                    <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                      Get started
+                  <a href="/features">
+                    <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
+                      Explore the features
                     </button>
                   </a>
                 </div>
@@ -195,10 +158,10 @@ export default function Home() {
                   <span className={amarante.className}>incremental path</span>
                 </h2>
                 <h2 className="text-3xl md:text-5xl pb-2">to adoption</h2>
-                <p className="text-xl font-light">
+                <p className="mt-3 text-xl font-light">
                   Extending, instead of replacing, async await
                 </p>
-                <p className="text-xl font-light mt-2">
+                <p className="text-xl font-light mt-3">
                   {" "}
                   offers you an
                   <span className={`mx-2 ${amarante.className}`}>
@@ -206,12 +169,12 @@ export default function Home() {
                   </span>
                   from the world of concurrent programming
                 </p>
-                <p className="text-xl font-light mt-2">
+                <p className="text-xl font-light mt-3">
                   into the world of distributed programming.
                 </p>
                 <a href="https://docs.resonatehq.io">
-                  <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                    Read our docs
+                  <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
+                    Get started
                   </button>
                 </a>
               </div>
