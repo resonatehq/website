@@ -93,7 +93,7 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <a href="https://discord.gg/rkRbrDsp">
+                  <a href="https://resonatehq/discord">
                     <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Join the Discord Community
                     </button>
@@ -260,7 +260,7 @@ export default function Home() {
                 <i className="bx bx-sm bxl-twitter px-4 text-zinc-900 hover:text-zinc-900"></i>
               </a>
               <a
-                href="https://discord.gg/rkRbrDsp"
+                href="https://resonatehq/discord"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Resonate HQ Discord"
