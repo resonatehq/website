@@ -31,13 +31,15 @@ const NavBar: React.FC = () => {
             Blog
           </a>
           <a
-            href="https://resonatehq.io/subscribe"
+            href="https://resonatehq.io/discord"
             target="_blank"
-            className="text-lg font-light hover:text-zinc-900"
+            rel="noopener noreferrer"
+            aria-label="Resonate HQ Discord"
           >
-            <button className="rounded-3xl px-3 py-0.5 bg-zinc-900 text-white hover:bg-zinc-500">
-              Subscribe
-            </button>
+            <i
+              className="bx bx-md bxl-discord text-zinc-900 hover:text-zinc-900"
+              style={{ verticalAlign: "middle" }}
+            ></i>
           </a>
           <a
             href="https://github.com/resonatehq/resonate"

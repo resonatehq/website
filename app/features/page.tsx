@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import Logo from "@/components/Logo";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const amarante = Roboto({
   weight: "700",
@@ -18,10 +19,10 @@ export default function Features() {
         <div className="text-zinc-900 w-full max-w-[1600px] px-4 lg:px-10">
           {/* Hero */}
           <section className="overflow-hidden">
-            <div className="mx-auto flex flex-col items-center lg:pb-24 md:pb-12 pt-16">
+            <div className="mx-auto flex flex-col items-center pb-24 pt-16">
               <div className="text-center">
                 <h1
-                  className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
+                  className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
                 >
                   Features
                 </h1>
@@ -184,37 +185,7 @@ export default function Features() {
           <div className="lg:pt-48 md:pt-24 pb-12"></div>
 
           {/* Footer */}
-          <footer className="bg-white p-8 flex flex-col items-center">
-            <div className="pb-6">
-              <a
-                href="https://twitter.com/resonatehqio"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Resonate HQ Twitter"
-              >
-                <i className="bx bx-sm bxl-twitter px-4 text-zinc-900 hover:text-zinc-900"></i>
-              </a>
-              <a
-                href="https://discord.gg/rkRbrDsp"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Resonate HQ Discord"
-              >
-                <i className="bx bx-sm bxl-discord px-4 text-zinc-900 hover:text-zinc-900"></i>
-              </a>
-              <a
-                href="https://github.com/resonatehq/resonate"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Resonate HQ GitHub"
-              >
-                <i className="bx bx-sm bxl-github px-4 text-zinc-900 hover:text-zinc-900"></i>
-              </a>
-            </div>
-            <p className="text-md">
-              Copyright &copy; {new Date().getFullYear()} Resonate HQ, Inc.
-            </p>
-          </footer>
+          <Footer />
         </div>
       </div>
     </div>

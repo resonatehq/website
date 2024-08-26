@@ -3,6 +3,7 @@ import Logo from "@/components/Logo";
 import Code from "@/components/Code";
 import Card from "@/components/Card";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 import InstallationGuide from "@/components/InstallationGuide";
 import CodeGuide from "@/components/CodeGuide";
 
@@ -26,12 +27,12 @@ export default function Home() {
               <div className="mx-auto flex flex-col items-center lg:pb-48 md:pb-24 pt-16">
                 <div className="text-center">
                   <h1
-                    className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
+                    className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
                   >
                     Distributed
                   </h1>
                   <h1
-                    className={`text-4xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
+                    className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
                   >
                     Async Await
                   </h1>
@@ -212,37 +213,7 @@ export default function Home() {
           </section>
 
           {/* Footer */}
-          <footer className="bg-white p-8 flex flex-col items-center">
-            <div className="pb-6">
-              <a
-                href="https://twitter.com/resonatehqio"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Resonate HQ Twitter"
-              >
-                <i className="bx bx-sm bxl-twitter px-4 text-zinc-900 hover:text-zinc-900"></i>
-              </a>
-              <a
-                href="https://resonatehq.io/discord"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Resonate HQ Discord"
-              >
-                <i className="bx bx-sm bxl-discord px-4 text-zinc-900 hover:text-zinc-900"></i>
-              </a>
-              <a
-                href="https://github.com/resonatehq/resonate"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Resonate HQ GitHub"
-              >
-                <i className="bx bx-sm bxl-github px-4 text-zinc-900 hover:text-zinc-900"></i>
-              </a>
-            </div>
-            <p className="text-md">
-              Copyright &copy; {new Date().getFullYear()} Resonate HQ, Inc.
-            </p>
-          </footer>
+          <Footer />
         </div>
       </div>
     </div>
