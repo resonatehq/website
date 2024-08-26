@@ -67,7 +67,7 @@ export default function Features() {
                     <span className={`mx-2 ${amarante.className}`}>scale</span>
                     with throughput.
                   </p>
-                  <a href="https://docs.resonatehq.io/">
+                  <a href="https://docs.resonatehq.io/evaluate/why-resonate-hq">
                     <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Learn more
                     </button>
@@ -150,7 +150,7 @@ export default function Features() {
           </section>
 
           {/* Test suite */}
-          <section>
+          {/* <section>
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
                 <div className="lg:pt-24 md:pt-24 pb-12">
@@ -180,7 +180,7 @@ export default function Features() {
                 </div>
               </div>
             </div>
-          </section>
+          </section> */}
           <div className="lg:pt-48 md:pt-24 pb-12"></div>
 
           {/* Footer */}
