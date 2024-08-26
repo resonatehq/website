@@ -104,7 +104,7 @@ export default function Features() {
                     </span>
                     for execution failures.
                   </p>
-                  <a href="https://docs.resonatehq.io/">
+                  <a href="https://docs.resonatehq.io/concepts/failure-detection-and-recovery">
                     <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Learn more
                     </button>
@@ -139,7 +139,7 @@ export default function Features() {
                     </span>
                     to survive hard crashes.
                   </p>
-                  <a href="https://docs.resonatehq.io/">
+                  <a href="https://docs.resonatehq.io/concepts/durable-promise#storage">
                     <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Learn more
                     </button>
