@@ -87,7 +87,7 @@ const InstallationGuide = () => {
   ];
 
   const serverTabs = [
-    { label: "macOS", command: "brew install resonate" },
+    { label: "macOS", command: "brew install resonatehq/tap/resonate" },
     // {
     //   label: "Linux",
     //   command:
