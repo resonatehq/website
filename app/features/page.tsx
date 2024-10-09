@@ -29,27 +29,20 @@ export default function Features() {
 
                 <p className="mt-2 font-light text-xl">
                   What you get when you use{" "}
-                  <span className={`mx-2 ${amarante.className}`}>
-                    Resonate HQ
-                  </span>
+                  <span className={`mx-2 ${amarante.className}`}>Resonate</span>
                   .
                 </p>
               </div>
             </div>
-            <img
-              src="/images/echo-peek.png"
-              className="fixed bottom-0 right-0 w-40 h-40 z-10 ask-echo"
-              alt="Echo"
-            />
           </section>
 
-          {/* Failure detection and mitigation */}
+          {/* Sequential programming model */}
           <section>
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
                 <div className="lg:pt-24 md:pt-24 pb-12">
                   <h2 className="text-3xl md:text-5xl pb-2">
-                    Cloud{" "}
+                    Sequential{" "}
                     <span className={amarante.className}>
                       programming model
                     </span>
@@ -68,7 +61,7 @@ export default function Features() {
                     <span className={`mx-2 ${amarante.className}`}>scale</span>
                     with throughput.
                   </p>
-                  <a href="https://docs.resonatehq.io/evaluate/why-resonate-hq">
+                  <a href="https://docs.resonatehq.io/evaluate/features/sequential-programming-model">
                     <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Learn more
                     </button>
@@ -78,7 +71,42 @@ export default function Features() {
             </div>
           </section>
 
-          {/* Failure detection and mitigation */}
+          {/* Incremental adoption */}
+          <section>
+            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
+              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
+                <div className="lg:pt-24 md:pt-24 pb-12">
+                  <h2 className="text-3xl md:text-5xl pb-2">
+                    <span className={amarante.className}>Incremental</span>{" "}
+                    adoption
+                  </h2>
+
+                  <p className="text-xl mt-3 font-light">
+                    Low latecy
+                    <span className={`mx-2 ${amarante.className}`}>
+                      local storage
+                    </span>
+                    by default.
+                  </p>
+
+                  <p className="text-xl mt-3 font-light">
+                    Configurable
+                    <span className={`mx-2 ${amarante.className}`}>
+                      remote storage
+                    </span>
+                    to survive hard crashes.
+                  </p>
+                  <a href="https://docs.resonatehq.io/evaluate/features/incremental-adoption">
+                    <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
+                      Learn more
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Failure detection and recovery */}
           <section>
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
@@ -106,41 +134,6 @@ export default function Features() {
                     for execution failures.
                   </p>
                   <a href="https://docs.resonatehq.io/concepts/failure-detection-and-recovery">
-                    <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                      Learn more
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Local or Remote storage */}
-          <section>
-            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
-              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
-                <div className="lg:pt-24 md:pt-24 pb-12">
-                  <h2 className="text-3xl md:text-5xl pb-2">
-                    Remote storage{" "}
-                    <span className={amarante.className}>on demand</span>
-                  </h2>
-
-                  <p className="text-xl mt-3 font-light">
-                    Low latecy
-                    <span className={`mx-2 ${amarante.className}`}>
-                      local storage
-                    </span>
-                    by default.
-                  </p>
-
-                  <p className="text-xl mt-3 font-light">
-                    Configurable
-                    <span className={`mx-2 ${amarante.className}`}>
-                      remote storage
-                    </span>
-                    to survive hard crashes.
-                  </p>
-                  <a href="https://docs.resonatehq.io/concepts/durable-promise#storage">
                     <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Learn more
                     </button>
