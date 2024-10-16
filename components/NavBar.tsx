@@ -65,6 +65,13 @@ const NavBar: React.FC = () => {
                 style={{ verticalAlign: "middle" }}
               ></i>
             </a>
+            <a
+              href="http://eepurl.com/iNagDk"
+              target="_blank"
+              className="text-white bg-gradient-to-r from-blue-500 to-teal-500 hover:bg-gradient-to-l hover:from-zinc-900 hover:to-zinc-900 rounded-full px-5 py-2 lg:px-6 lg:py-2.5"
+            >
+              Subscribe
+            </a>
           </div>
         </div>
       </nav>

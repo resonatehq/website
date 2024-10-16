@@ -3,6 +3,12 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white p-8 flex flex-col items-center">
+      <a
+        href="http://eepurl.com/iNagDk"
+        className="mb-12 text-white border bg-zinc-900 border-zinc-900 hover:bg-white hover:text-zinc-900 rounded-full px-5 py-2 lg:px-6 lg:py-2.5"
+      >
+        Subscribe
+      </a>
       <div className="pb-6">
         <a
           href="https://twitter.com/resonatehqio"
