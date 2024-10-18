@@ -6,7 +6,7 @@ import MailchimpForm from "@/components/MailchimpForm";
 
 const benefits = [
   "Product release annoucements",
-  "Notification of Blog posts",
+  "Notification of blog posts",
   "Webinar sign up offers",
   "Access to new tutorials",
   "And more!",
