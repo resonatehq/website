@@ -1,13 +1,7 @@
-import { Roboto } from "next/font/google";
+import { amarante } from "@/styles/fonts";
 import Logo from "@/components/Logo";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-
-const amarante = Roboto({
-  weight: "700",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export default function Features() {
   return (
