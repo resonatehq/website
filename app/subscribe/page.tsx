@@ -52,7 +52,7 @@ export default function Features() {
         </div>
       </div>
       <MailchimpForm />
-
+      <div className="lg:pt-48 md:pt-24 pb-12"></div>
       <Footer />
     </div>
   );
