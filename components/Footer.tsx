@@ -1,19 +1,29 @@
-"use client";
 import React from "react";
-import { usePathname } from "next/navigation";
 
 const Footer: React.FC = () => {
-  const currentPath = usePathname(); // Get the current path
   return (
     <footer className="bg-white p-8 flex flex-col items-center">
-      {currentPath !== "/subscribe" && (
+      <div className="flex space-x-4 mb-8">
+        <a
+          href="/features"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
+        >
+          Features
+        </a>
         <a
           href="/subscribe"
-          className="mb-12 text-white border bg-zinc-900 border-zinc-900 hover:bg-white hover:text-zinc-900 rounded-full px-5 py-2 lg:px-6 lg:py-2.5"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
         >
           Subscribe
         </a>
-      )}
+        <a
+          href="/webinars"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
+        >
+          Webinars
+        </a>
+      </div>
+
       <div className="pb-6">
         <a
           href="https://twitter.com/resonatehqio"
