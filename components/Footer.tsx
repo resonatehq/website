@@ -3,6 +3,27 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white p-8 flex flex-col items-center">
+      <div className="flex space-x-4 mb-8">
+        <a
+          href="/features"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
+        >
+          Features
+        </a>
+        <a
+          href="/subscribe"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
+        >
+          Subscribe
+        </a>
+        <a
+          href="/webinars"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
+        >
+          Webinars
+        </a>
+      </div>
+
       <div className="pb-6">
         <a
           href="https://twitter.com/resonatehqio"
@@ -30,7 +51,6 @@ const Footer: React.FC = () => {
         </a>
         <a
           href="https://www.linkedin.com/company/resonatehqio"
-          target="_blank"
           rel="noopener noreferrer"
           aria-label="Resonate HQ LinkedIn"
         >
