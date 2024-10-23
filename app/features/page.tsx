@@ -115,19 +115,56 @@ export default function Features() {
                   <p className="text-xl mt-3 font-light">
                     Configurable
                     <span className={`mx-2 ${amarante.className}`}>
-                      timeouts
-                    </span>
-                    for promise resolution.
-                  </p>
-
-                  <p className="text-xl mt-3 font-light">
-                    Configurable
-                    <span className={`mx-2 ${amarante.className}`}>
                       retries
                     </span>
                     for execution failures.
                   </p>
-                  <a href="https://docs.resonatehq.io/concepts/failure-detection-and-recovery">
+
+                  <p className="text-xl mt-3 font-light">
+                    <span className={`mx-2 ${amarante.className}`}>
+                      Distributed resume
+                    </span>
+                    for process crashes.
+                  </p>
+
+                  <a href="https://docs.resonatehq.io/evaluate/features/execution-retries">
+                    <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
+                      Learn more
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Transparent batching */}
+          <section>
+            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
+              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
+                <div className="lg:pt-24 md:pt-24 pb-12">
+                  <h2 className="text-3xl md:text-5xl pb-2">
+                    Built in{" "}
+                    <span className={amarante.className}>
+                      transparent batching
+                    </span>
+                  </h2>
+
+                  <p className="text-xl mt-3 font-light">
+                    Take advantage of
+                    <span className={`mx-2 ${amarante.className}`}>
+                      bulk operations
+                    </span>
+                    .
+                  </p>
+
+                  <p className="text-xl mt-3 font-light">
+                    Define a
+                    <span className={`mx-2 ${amarante.className}`}>
+                      data structure and handler
+                    </span>
+                    and let Resonate do the rest.
+                  </p>
+                  <a href="https://docs.resonatehq.io/evaluate/features/transparent-batching">
                     <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
                       Learn more
                     </button>
