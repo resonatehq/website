@@ -1,7 +1,6 @@
 const MailchimpForm = () => {
   return (
-    <div className="w-[600px] mx-auto bg-white p-6">
-      <div className="max-w-lg mx-auto p-6"></div>
+    <div className="w-full max-w-[600px] mx-auto bg-white p-6 px-4 sm:px-6">
       <form
         action="https://resonatehq.us9.list-manage.com/subscribe/post?u=6bddf67c72ae448993eaa3948&amp;id=614ef31173&amp;f_id=0099e8e3f0"
         method="post"
