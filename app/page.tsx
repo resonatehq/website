@@ -51,10 +51,18 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <a href="https://resonatehq.io/discord">
-                    <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                      Join the Discord Community
-                    </button>
+                  <div>
+                    <a href="https://resonatehq.io/discord">
+                      <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
+                        Join the Discord Community
+                      </button>
+                    </a>
+                  </div>
+                  <a
+                    href="/subscribe"
+                    className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500"
+                  >
+                    Subscribe
                   </a>
                 </div>
               </div>
