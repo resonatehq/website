@@ -6,6 +6,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import InstallationGuide from "@/components/InstallationGuide";
 import CodeGuide from "@/components/CodeGuide";
+import VideoEmbed from "@/components/VideoEmbed";
 
 export default function Home() {
   return (
@@ -14,7 +15,7 @@ export default function Home() {
       <NavBar />
 
       <div className="flex flex-row justify-center w-full">
-        <div className="text-zinc-900 w-full max-w-[1600px] px-4 lg:px-10">
+        <div className="text-zinc-900 w-full max-w-[1200px] px-4 lg:px-10">
           {/* Hero */}
           <section className="overflow-hidden">
             <div className="relative overflow-hidden">
@@ -51,22 +52,19 @@ export default function Home() {
                     </a>
                     .
                   </p>
-                  <div>
-                    <a href="https://resonatehq.io/discord">
-                      <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                        Join the Discord Community
-                      </button>
-                    </a>
-                  </div>
-                  <a
-                    href="/subscribe"
-                    className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500"
-                  >
-                    Subscribe
+
+                  <a href="https://resonatehq.io/discord">
+                    <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
+                      Join the Discord Community
+                    </button>
                   </a>
                 </div>
               </div>
             </div>
+          </section>
+
+          <section>
+            <VideoEmbed />
           </section>
 
           {/* Installation */}
