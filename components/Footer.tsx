@@ -22,6 +22,18 @@ const Footer: React.FC = () => {
         >
           Webinars
         </a>
+        <a
+          href="/privacy-policy"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
+        >
+          Privacy Policy
+        </a>
+        <a
+          href="/terms-and-conditions"
+          className="text-zinc-900 border-b border-transparent hover:border-zinc-900"
+        >
+          Terms and Conditions
+        </a>
       </div>
 
       <div className="pb-6">
