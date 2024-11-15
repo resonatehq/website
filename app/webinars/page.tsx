@@ -10,7 +10,7 @@ export default function Features() {
       <NavBar />
 
       <div className="flex flex-row justify-center w-full">
-        <div className="text-zinc-900 w-full max-w-[1600px] px-4 lg:px-10">
+        <div className="text-zinc-900 w-full max-w-[800px] px-4 lg:px-10">
           {/* Hero */}
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
@@ -50,15 +50,19 @@ export default function Features() {
                     <span className={`mx-2 ${amarante.className}`}>PST</span>
                   </p>
                 </div>
-
-                <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSeDkOJAGgDkw-KHMF9CT6Kqo2qxj8T1RtmI2PjyAKQiiXc-xw/viewform?embedded=true"
-                  width="640"
-                  height="974"
-                  style={{ border: "none" }}
-                >
-                  Loading…
-                </iframe>
+                <div className="container mx-auto px-4 py-8 text-center mb-24">
+                  {/* YouTube Video Embed */}
+                  <div className="relative overflow-hidden pb-[56.25%] mb-8">
+                    <iframe
+                      src="https://www.youtube.com/embed/90De4NuagzQ"
+                      title="YouTube video player"
+                      className="absolute top-0 left-0 w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
