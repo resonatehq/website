@@ -133,7 +133,6 @@ export default function Home() {
                       alt="Async Call Graph"
                       width="1521"
                       height="1881"
-                      layout="responsive"
                     />
                   </div>
                 </div>
