@@ -1,5 +1,6 @@
 // components/NavBar.tsx
 import React from "react";
+import Image from "next/image";
 
 const NavBar: React.FC = () => {
   return (
@@ -19,7 +20,14 @@ const NavBar: React.FC = () => {
             href="/"
             className="flex items-center space-x-2 rtl:space-x-reverse"
           >
-            <img src="/images/echo-logo.svg" alt="Resonate Logo" width="32px" />
+            <Image
+              src="/images/echo-logo.svg"
+              alt="Resonate Logo"
+              className="max-h-[48px]"
+              height="432"
+              width="472"
+              layout="responsive"
+            />
             <span className="font-medium text-2xl whitespace-nowrap">
               Resonate HQ
             </span>

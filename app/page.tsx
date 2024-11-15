@@ -1,6 +1,5 @@
 import { amarante } from "@/styles/fonts";
-import Logo from "@/components/Logo";
-import Code from "@/components/Code";
+import Image from "next/image";
 import Card from "@/components/Card";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
@@ -128,9 +127,13 @@ export default function Home() {
               <div className="w-full flex justify-center">
                 <div className="flex flex-col text-center w-full px-4 items-center">
                   <div className="flex-1 flex mb-10 w-full max-w-[800px] items-center justify-center">
-                    <img
+                    <Image
                       src="/images/async-call-graph-vert.svg"
                       className="w-full lg:w-5/6"
+                      alt="Async Call Graph"
+                      width="1521"
+                      height="1881"
+                      layout="responsive"
                     />
                   </div>
                 </div>

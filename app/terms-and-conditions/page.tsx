@@ -41,9 +41,10 @@ export default function TermsAndConditions() {
                 <div className="lg:pt-12 pb-8">
                   <h3 className="text-2xl md:text-3xl pb-2">1. Introduction</h3>
                   <p className="text-xl mt-3 font-light">
-                    These Terms and Conditions ("Terms") govern your use of the
-                    Resonate HQ website, software, and services. By accessing or
-                    using our services, you agree to comply with these Terms.
+                    These Terms and Conditions (&quot;Terms&quot;) govern your
+                    use of the Resonate HQ website, software, and services. By
+                    accessing or using our services, you agree to comply with
+                    these Terms.
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
@@ -72,8 +73,8 @@ export default function TermsAndConditions() {
                   </h3>
                   <p className="text-xl mt-3 font-light">
                     Resonate HQ is not liable for any damages arising from your
-                    use of our services. Our services are provided "as is" and
-                    without warranties of any kind.
+                    use of our services. Our services are provided &quot;as
+                    is&quot; and without warranties of any kind.
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
