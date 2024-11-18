@@ -29,7 +29,45 @@ export default function Features() {
           </section>
 
           <section>
-            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
+            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
+              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
+                <div className="lg:pt-24 md:pt-24 pb-12">
+                  <h2 className="text-3xl md:text-5xl pb-2">
+                    December <span className={amarante.className}>18th</span>{" "}
+                    2024
+                  </h2>
+
+                  <p className="text-xl mt-3 font-light">
+                    Join us for an hour long
+                    <span className={`mx-2 ${amarante.className}`}>
+                      deep dive
+                    </span>
+                    into a use case and Resonate message passing.
+                  </p>
+
+                  <p className="text-xl mt-3 font-light">
+                    10:00 AM - 11:00 AM
+                    <span className={`mx-2 ${amarante.className}`}>PST</span>
+                  </p>
+                </div>
+                <div className="container mx-auto px-4 py-8 text-center">
+                  {/* YouTube Video Embed */}
+                  <div className="relative overflow-hidden">
+                    <iframe
+                      src="https://docs.google.com/forms/d/e/1FAIpQLScQ6F6eNdblqdEvzvW_igW1PlnmgeXbbL_GQtpOO2ZVeaPHWA/viewform?embedded=true"
+                      width="640"
+                      height="990"
+                    >
+                      Loading…
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
                 <div className="lg:pt-24 md:pt-24 pb-12">
                   <h2 className="text-3xl md:text-5xl pb-2">
@@ -38,7 +76,7 @@ export default function Features() {
                   </h2>
 
                   <p className="text-xl mt-3 font-light">
-                    Join us for an hour long
+                    An hour long
                     <span className={`mx-2 ${amarante.className}`}>
                       deep dive
                     </span>
@@ -50,7 +88,7 @@ export default function Features() {
                     <span className={`mx-2 ${amarante.className}`}>PST</span>
                   </p>
                 </div>
-                <div className="container mx-auto px-4 py-8 text-center mb-24">
+                <div className="container mx-auto px-4 py-8 text-center">
                   {/* YouTube Video Embed */}
                   <div className="relative overflow-hidden pb-[56.25%] mb-8">
                     <iframe
