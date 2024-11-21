@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
   return (
     <div>
       {/* Announcement Bar */}
-      <div className="text-xl w-full bg-gradient-to-r from-stone-950 via-slate-600 to-zinc-950 text-white font-light text-center py-6">
+      <div className="text-xl w-full bg-gradient-to-r bg-stone-900 text-white font-light text-center py-6">
         <a
           href="https://forms.gle/KzDddSfk5SPZ9Ckq6"
           className="hover:underline"
@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
       {/* Navbar */}
       <nav className="bg-white border-b border-slate-200">
         {/* Logo */}
-        <div className="flex justify-center py-4">
+        <div className="flex justify-center py-6">
           <a href="/" className="flex items-center">
             <Image
               src="/images/echo-logo.svg"
