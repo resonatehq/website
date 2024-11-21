@@ -10,14 +10,15 @@ const NavBar: React.FC = () => {
   return (
     <div>
       {/* Announcement Bar */}
-      {/* <div className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-center py-3">
+      <div className="text-xl w-full bg-gradient-to-r from-stone-950 via-slate-600 to-zinc-950 text-white font-light text-center py-6">
         <a
           href="https://forms.gle/KzDddSfk5SPZ9Ckq6"
-          className="text-lg font-bold hover:underline"
+          className="hover:underline"
         >
-          Join the Resonate Python SDK Waitlist! 🚀
-        </a>
-      </div> */}
+          Join the Waitlist!
+        </a>{" "}
+        🚀
+      </div>
 
       {/* Navbar */}
       <nav className="bg-white border-b border-slate-200">
