@@ -27,6 +27,7 @@ const config: Config = {
           "Apple Color Emoji",
           "Segoe UI Emoji",
           "Segoe UI Symbol",
+          "Open Sans",
         ],
         mono: [
           "SFMono-Regular",

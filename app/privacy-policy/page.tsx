@@ -1,4 +1,3 @@
-import { amarante } from "@/styles/fonts";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 
@@ -9,23 +8,17 @@ export default function PrivacyPolicy() {
       <NavBar />
 
       <div className="flex flex-row justify-center w-full">
-        <div className="text-zinc-900 w-full max-w-[1200px] px-4 lg:px-10">
+        <div className="text-slate-700 w-full max-w-[1200px] px-4 lg:px-10">
           {/* Hero */}
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
               <div className="text-center">
-                <h1
-                  className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
-                >
+                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
                   Privacy Policy
                 </h1>
 
                 <p className="mt-2 font-light text-xl">
-                  Learn how{" "}
-                  <span className={`mx-2 ${amarante.className}`}>
-                    Resonate HQ
-                  </span>{" "}
-                  protects your information.
+                  Learn how Resonate HQ protects your information.
                 </p>
                 <p className="mt-2 font-light text-xl">
                   Last updated November 15, 2024
@@ -121,7 +114,7 @@ export default function PrivacyPolicy() {
                   <h3 className="text-2xl md:text-3xl pb-2">9. Contact Us</h3>
                   <p className="text-xl mt-3 font-light">
                     For questions about this policy, email us at{" "}
-                    <span className={`font-semibold ${amarante.className}`}>
+                    <span className="font-semibold">
                       contact@resonatehq.com
                     </span>
                     .

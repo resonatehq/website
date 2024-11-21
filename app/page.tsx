@@ -1,11 +1,13 @@
 import { amarante } from "@/styles/fonts";
 import Image from "next/image";
-import Card from "@/components/Card";
+import ConcurrencyGrid from "@/components/ConcurrencyGrid";
+import DistributionGrid from "@/components/DistributionGrid";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import InstallationGuide from "@/components/InstallationGuide";
 import CodeGuide from "@/components/CodeGuide";
-import VideoEmbed from "@/components/VideoEmbed";
+import HeroSection from "@/components/HeroSection";
+import ScrollingGraphs from "@/components/ScrollingGraphs";
 
 export default function Home() {
   return (
@@ -14,47 +16,160 @@ export default function Home() {
       <NavBar />
 
       <div className="flex flex-row justify-center w-full">
-        <div className="text-zinc-900 w-full max-w-[1200px] px-4 lg:px-10">
+        <div className="text-zinc-900 w-full max-w-[1100px] px-4 lg:px-10">
           {/* Hero */}
+          <HeroSection />
+
+          <section className="pt-24">
+            <ConcurrencyGrid />
+          </section>
+
+          <section className="pt-24">
+            <DistributionGrid />
+          </section>
+
+          <section className="overflow-hidden pt-24 lg:pt-36 pb-12">
+            <div className="relative overflow-hidden">
+              <div className="text-slate-700 mx-auto flex flex-col items-center">
+                <div className="text-center">
+                  {/* Smaller text on one line */}
+                  <p className="text-2xl sm:text-3xl font-light tracking-tight pb-12">
+                    Built on the{" "}
+                    <span className="md:ml-2 md:mr-2 font-bold">
+                      Distributed Async Await
+                    </span>{" "}
+                  </p>
+
+                  {/* Language with fade effect */}
+                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl">
+                    open specification.
+                  </h2>
+                  <p className="mt-3 font-light text-2xl">
+                    No proprietary primitives.
+                  </p>
+                  <p className="mt-3 mb-12 font-light text-2xl">
+                    Extend it to any technology stack.
+                  </p>
+                  <a href="https://github.com/resonatehq/durable-promise-specification">
+                    <button className="mt-4 inline-flex items-center justify-center text-xl rounded-md px-6 py-2 bg-stone-900 text-white hover:bg-stone-700">
+                      Read the spec
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="w-full flex justify-center">
+              <div className="flex flex-col text-center w-full items-center">
+                <div className="flex-1 flex w-full items-center justify-center">
+                  <Image
+                    src="/images/website-call-graph-5.svg"
+                    className="w-full"
+                    alt="Simple Call Graph"
+                    width="2562"
+                    height="1362"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
           <section className="overflow-hidden">
             <div className="relative overflow-hidden">
-              <div className="mx-auto flex flex-col items-center lg:pb-48 md:pb-24 pt-16">
+              <div className="text-slate-700 mx-auto flex flex-col items-center mb-12 pb-36 pt-6">
                 <div className="text-center">
-                  <h1
-                    className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
+                  {/* Smaller text on one line */}
+                  <p
+                    className={`text-2xl sm:text-3xl font-light tracking-tight pb-12`}
                   >
-                    Distributed
-                  </h1>
-                  <h1
-                    className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
-                  >
-                    Async Await
-                  </h1>
-                  <p className="mt-3 font-light text-2xl">
-                    A{" "}
-                    <span className={`mx-2 ${amarante.className}`}>
-                      durable execution
-                    </span>{" "}
-                    framework.
-                  </p>
-                  <p className="mt-3 font-light text-2xl">
-                    A{" "}
-                    <span className={`mx-2 ${amarante.className}`}>
-                      dead simple
-                    </span>{" "}
-                    cloud programming model.
-                  </p>
-                  <p className="mt-3 font-light text-xl">
-                    <a href="https://github.com/resonatehq">Open source</a>.{" "}
-                    <a href="https://github.com/resonatehq/durable-promise-specification">
-                      Open specification
-                    </a>
-                    .
+                    Concurrent, distributed, and{" "}
+                    <span className="md:ml-2 md:mr-2 font-bold">durable</span>{" "}
                   </p>
 
-                  <a href="https://resonatehq.io/discord">
-                    <button className="mt-4 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                      Join the Discord Community
+                  {/* Language with fade effect */}
+                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl font-bold">
+                    promises and functions.
+                  </h2>
+                  <p className="mt-3 font-light text-2xl">
+                    Extending the async await programming model,
+                  </p>
+                  <p className="mt-3 mb-12 font-light text-2xl">
+                    distributed computing becomes a first-class citizen.
+                  </p>
+                  <a href="https://docs.resonatehq.io/concepts/distributed-async-await">
+                    <button className="mt-4 inline-flex items-center justify-center text-xl rounded-md px-6 py-2 bg-stone-900 text-white hover:bg-stone-700">
+                      Learn more
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <div className="flex flex-row justify-center w-full border-t border-slate-200 mb-12"></div>
+
+      <section>
+        <ScrollingGraphs />
+      </section>
+
+      <div className="flex flex-row justify-center w-full border-t border-slate-200 mt-12"></div>
+      <div className="flex flex-row justify-center w-full p-4 mb-24 text-slate-700 cursor-pointer hover:underline hover:text-slate-500 underline-offset-4">
+        <a href="https://docs.resonatehq.io/concepts/call-graph">
+          Learn more about Call Graphs
+        </a>
+      </div>
+
+      <div className="flex flex-row justify-center w-full">
+        <div className="text-zinc-900 w-full max-w-[800px] px-4 lg:px-10">
+          <section className="overflow-hidden">
+            <div className="relative overflow-hidden">
+              <div className="text-slate-700 mx-auto flex flex-col items-center pb-24 pt-24">
+                <div className="text-center">
+                  <h2 className="mb-12 text-4xl font-bold tracking-tight sm:text-6xl font-light">
+                    Fully decentralized.
+                  </h2>
+                  <p className="mt-3 font-light text-2xl">
+                    No central element in the technology stack.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div className="w-full flex justify-center">
+              <div className="flex flex-col text-center w-full items-center">
+                <div className="flex-1 flex w-full items-center justify-center">
+                  <Image
+                    src="/images/connected-nodes.svg"
+                    className="w-full p-24"
+                    alt="Simple Call Graph"
+                    width="1002"
+                    height="1082"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="overflow-hidden">
+            <div className="relative overflow-hidden">
+              <div className="text-slate-700 mx-auto flex flex-col items-center pb-24 pt-24">
+                <div className="text-center">
+                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl">
+                    Free and open source.
+                  </h2>
+                  <p className="mt-3 mb-12 font-light text-2xl">
+                    Don&#39;t worry about vendor lock-in.
+                  </p>
+
+                  <a href="https://github.com/resonatehq/">
+                    <button className="mt-4 inline-flex items-center text-xl justify-center rounded-md px-6 py-2 bg-stone-900 text-white hover:bg-stone-700">
+                      Visit GitHub
                     </button>
                   </a>
                 </div>
@@ -63,53 +178,40 @@ export default function Home() {
           </section>
 
           <section>
-            <VideoEmbed />
+            <div className="w-full flex justify-center">
+              <div className="flex flex-col text-center w-full items-center">
+                <div className="flex-1 flex w-full items-center justify-center">
+                  <Image
+                    src="/images/sequence-of-nodes.svg"
+                    className="w-full p-24"
+                    alt="Simple Call Graph"
+                    width="42"
+                    height="1002"
+                  />
+                </div>
+              </div>
+            </div>
           </section>
 
-          {/* Installation */}
-          <InstallationGuide />
-
-          {/* Code example */}
-          <CodeGuide />
-
-          {/* Features */}
-
-          {/* Functions & Promises */}
-          <section>
-            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex">
-              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
-                <div className="lg:pt-48 md:mt-24 pb-12">
-                  <p className={`text-zinc-900 text-xl font-light`}>
-                    Concurrent, distributed, and durable
-                  </p>
-                  <h2 className="text-3xl md:text-5xl pb-2">
-                    <span className={amarante.className}>Promises</span> and{" "}
-                    <span className={amarante.className}>Functions</span>
+          <section className="overflow-hidden">
+            <div className="relative overflow-hidden">
+              <div className="text-slate-700 mx-auto flex flex-col items-center pb-24 pt-24 mb-12">
+                <div className="text-center">
+                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl">
+                    More than
+                    <br />
+                    Durable Execution.
                   </h2>
 
-                  <p className="text-xl mt-3 font-light">
-                    Distributed Async Await
-                    <span className={`mx-2 ${amarante.className}`}>
-                      extends
-                    </span>
-                    the async await programming model
+                  <p className="mt-3 font-light text-2xl">
+                    Durability without the complexity.
                   </p>
-
-                  <p className="text-xl mt-3 font-light">
-                    <span className={`mx-2 ${amarante.className}`}>beyond</span>
-                    the boundaries of a single process.
-                  </p>
-
-                  <p className="text-xl font-light mt-3">
-                    Distributed computing becomes a
-                    <span className={`mx-2 ${amarante.className}`}>
-                      first-class
-                    </span>
-                    citizen.
+                  <p className="mt-3 mb-12 font-light text-2xl">
+                    Enjoy a dead simple programming model for the cloud.
                   </p>
                   <a href="/features">
-                    <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                      Explore the features
+                    <button className="mt-4 inline-flex items-center justify-center rounded-md text-xl px-6 py-2 bg-stone-900 text-white hover:bg-stone-700">
+                      Checkout the features
                     </button>
                   </a>
                 </div>
@@ -119,95 +221,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full">
-        <div className="flex justify-center">
-          <div className="text-zinc-900 w-full max-w-[1600px] px-4 lg:pt-24 md:pt-12 lg:pb-24 md:pb-12">
-            {/* Call graph */}
-            <section>
-              <div className="w-full flex justify-center">
-                <div className="flex flex-col text-center w-full px-4 items-center">
-                  <div className="flex-1 flex mb-10 w-full max-w-[800px] items-center justify-center">
-                    <Image
-                      src="/images/async-call-graph-vert.svg"
-                      className="w-full lg:w-5/6"
-                      alt="Async Call Graph"
-                      width="1521"
-                      height="1881"
-                    />
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
-      {/* Incrementally Adopt Resonate */}
       <div className="flex flex-row justify-center w-full">
-        <div className="text-zinc-900 w-full max-w-[1600px] px-4 lg:px-10">
-          <section>
-            <div className="w-full max-w-screen sm:max-w-screen-2xl flex justify-center lg:pt-24 md:pt-12 lg:pb-24 md:pb-12">
-              <div className="w-full max-w-[800px] px-4 text-center">
-                <p className={`text-zinc-900 text-xl font-light`}>
-                  Your App, Your Way
-                </p>
-                <h2 className="text-3xl md:text-5xl pb-2">Enjoy an</h2>
-                <h2 className="text-3xl md:text-5xl pb-2">
-                  <span className={amarante.className}>incremental path</span>
-                </h2>
-                <h2 className="text-3xl md:text-5xl pb-2">to adoption</h2>
-                <p className="mt-3 text-xl font-light">
-                  Extending, instead of replacing, async await
-                </p>
-                <p className="text-xl font-light mt-3">
-                  {" "}
-                  offers you an
-                  <span className={`mx-2 ${amarante.className}`}>
-                    incremental transition
-                  </span>
-                  from the world of concurrent programming
-                </p>
-                <p className="text-xl font-light mt-3">
-                  into the world of distributed programming.
-                </p>
-                <a href="https://docs.resonatehq.io">
-                  <button className="mt-6 inline-flex items-center justify-center rounded-md px-3 py-2 bg-zinc-900 text-white hover:bg-zinc-500">
-                    Get started
-                  </button>
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <div className="w-full max-w-screen sm:max-w-screen-2xl flex justify-center">
-              <div className="w-full max-w-[800px] px-4 flex flex-col items-center">
-                <div className="flex flex-col w-full space-y-8 lg:pb-48 md:pb-24">
-                  <Card
-                    className="h-60 w-full"
-                    title="SDK"
-                    descriptionOne="Start with the"
-                    descriptionTwo="Get retries, rate limiting, timeouts, cancelation, metrics, and tracing."
-                    descriptionThree="No infrastructure required."
-                  />
-                  <Card
-                    className="h-60 w-full"
-                    title="Server"
-                    descriptionOne="Add the"
-                    descriptionTwo="Run functions for minutes, hours, days, weeks, months, or years"
-                    descriptionThree="regardless of hardware or software failures."
-                  />
-                  <Card
-                    className="h-60 w-full"
-                    title="Deploy anywhere"
-                    descriptionOne="Then"
-                    descriptionTwo="Run on prem, on the edge, in the cloud, or go serverless."
-                    descriptionThree=""
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-
+        <div className="text-slate-800 w-full max-w-[1600px] px-4 lg:px-10">
           {/* Footer */}
           <Footer />
         </div>

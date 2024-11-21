@@ -1,7 +1,6 @@
-import { amarante } from "@/styles/fonts";
-import Logo from "@/components/Logo";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export default function Features() {
   return (
@@ -12,18 +11,24 @@ export default function Features() {
       <div className="flex flex-row justify-center w-full">
         <div className="text-zinc-900 w-full max-w-[800px] px-4 lg:px-10">
           {/* Hero */}
+
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
-              <div className="text-center">
-                <h1
-                  className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
-                >
+              <div className="text-center text-slate-700">
+                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
                   Webinars
                 </h1>
 
-                <p className="mt-2 font-light text-xl">
+                <p className="font-light text-2xl">
                   Sign up for our upcoming webinars.
                 </p>
+                <Image
+                  src="/images/broadcast-mic.svg"
+                  alt="Icon"
+                  className="w-10 h-10 mx-auto my-4"
+                  width="512"
+                  height="512"
+                />
               </div>
             </div>
           </section>
@@ -31,23 +36,18 @@ export default function Features() {
           <section>
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
-                <div className="lg:pt-24 md:pt-24 pb-12">
-                  <h2 className="text-3xl md:text-5xl pb-2">
-                    December <span className={amarante.className}>18th</span>{" "}
-                    2024
+                <div className="lg:pt-24 md:pt-24 pb-12 text-slate-700">
+                  <h2 className="text-4xl pb-2">
+                    December <span className="font-bold">18th</span> 2024
                   </h2>
 
-                  <p className="text-xl mt-3 font-light">
-                    Join us for an hour long
-                    <span className={`mx-2 ${amarante.className}`}>
-                      deep dive
-                    </span>
-                    into a use case and Resonate message passing.
+                  <p className="text-2xl mt-3 font-light">
+                    Join us for an hour long deep dive into a use case and
+                    Resonate message passing.
                   </p>
 
-                  <p className="text-xl mt-3 font-light">
-                    10:00 AM - 11:00 AM
-                    <span className={`mx-2 ${amarante.className}`}>PST</span>
+                  <p className="text-2xl mt-6 font-light">
+                    10:00 AM - 11:00 AM <span className="font-bold">PST</span>
                   </p>
                 </div>
                 <div className="container mx-auto px-4 py-8 text-center">
@@ -56,7 +56,7 @@ export default function Features() {
                     <iframe
                       src="https://docs.google.com/forms/d/e/1FAIpQLScQ6F6eNdblqdEvzvW_igW1PlnmgeXbbL_GQtpOO2ZVeaPHWA/viewform?embedded=true"
                       width="640"
-                      height="990"
+                      height="1080"
                     >
                       Loading…
                     </iframe>
@@ -68,24 +68,18 @@ export default function Features() {
 
           <section>
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
-              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
+              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center text-slate-700">
                 <div className="lg:pt-24 md:pt-24 pb-12">
-                  <h2 className="text-3xl md:text-5xl pb-2">
-                    November <span className={amarante.className}>6th</span>{" "}
-                    2024
+                  <h2 className="text-4xl pb-2">
+                    November <span className="font-bold">6th</span> 2024
                   </h2>
 
-                  <p className="text-xl mt-3 font-light">
-                    An hour long
-                    <span className={`mx-2 ${amarante.className}`}>
-                      deep dive
-                    </span>
-                    into the Resonate Python SDK.
+                  <p className="text-2xl mt-3 font-light">
+                    An hour long deep dive into the Resonate Python SDK.
                   </p>
 
-                  <p className="text-xl mt-3 font-light">
-                    10:00 AM - 11:00 AM
-                    <span className={`mx-2 ${amarante.className}`}>PST</span>
+                  <p className="text-2xl mt-6 font-light">
+                    10:00 AM - 11:00 AM <span className="font-bold">PST</span>
                   </p>
                 </div>
                 <div className="container mx-auto px-4 py-8 text-center">
@@ -106,7 +100,10 @@ export default function Features() {
           </section>
 
           <div className="lg:pt-48 md:pt-24 pb-12"></div>
-
+        </div>
+      </div>
+      <div className="flex flex-row justify-center w-full">
+        <div className="text-zinc-900 w-full max-w-[1200px] px-4 lg:px-10">
           {/* Footer */}
           <Footer />
         </div>

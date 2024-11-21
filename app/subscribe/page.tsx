@@ -1,8 +1,7 @@
-import { amarante } from "@/styles/fonts";
-import Logo from "@/components/Logo";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import MailchimpForm from "@/components/MailchimpForm";
+import Image from "next/image";
 
 const benefits = [
   "Product release annoucements",
@@ -22,29 +21,28 @@ export default function Features() {
         <div className="text-zinc-900 w-full max-w-[1600px] px-4 lg:px-10">
           {/* Hero */}
           <section className="overflow-hidden">
-            <div className="mx-auto flex flex-col items-center pt-16">
+            <div className="mx-auto flex flex-col items-center pt-16 text-slate-700">
               <div className="text-center">
-                <h1
-                  className={`text-5xl font-bold tracking-tight sm:text-8xl ${amarante.className}`}
-                >
+                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
                   Subscribe
                 </h1>
 
-                <p className="mt-2 font-light text-xl">
-                  What do you get when you{" "}
-                  <span className={`mx-2 ${amarante.className}`}>
-                    subscribe to Resonate HQ
-                  </span>
-                  ?
+                <p className="mt-2 font-light text-2xl">
+                  What do you get when you subscribe to Resonate HQ ?
                 </p>
-                <div className="text-left mt-12 px-12">
-                  <ul className="list-disc list-inside text-zinc-900">
-                    {benefits.map((benefit, index) => (
-                      <li key={index} className="text-xl mt-3 font-light">
-                        {benefit}
-                      </li>
-                    ))}
-                  </ul>
+                <Image
+                  src="/images/mail.svg"
+                  alt="Icon"
+                  className="w-10 h-10 mx-auto my-4"
+                  height="512"
+                  width="512"
+                />
+                <div className="text-left mt-12 px-12 text-center">
+                  {benefits.map((benefit, index) => (
+                    <p key={index} className="text-2xl mt-3 font-light">
+                      {benefit}
+                    </p>
+                  ))}
                 </div>
               </div>
             </div>
