@@ -4,8 +4,13 @@ import Script from "next/script";
 import "../public/css/style.css";
 import "../public/css/boxicons.min.css";
 import CookieBanner from "../components/CookieBanner";
+import { Open_Sans } from "next/font/google";
 
-// const inter = Inter({ subsets: ['latin'] })
+const openSans = Open_Sans({
+  weight: ["300", "600", "700"], // Choose the weights you need
+  subsets: ["latin"], // Choose the subsets you need
+  display: "swap", // Improves rendering performance
+});
 
 export const metadata: Metadata = {
   title: "Resonate",
@@ -18,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={openSans.className}>
       <meta
         data-rh="true"
         property="og:image"

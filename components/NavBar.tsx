@@ -1,79 +1,115 @@
-// components/NavBar.tsx
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 
 const NavBar: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <div>
-      <div className="w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white text-center py-3">
+      {/* Announcement Bar */}
+      <div className="text-xl w-full bg-gradient-to-r from-stone-950 via-slate-600 to-zinc-950 text-white font-light text-center py-6">
         <a
           href="https://forms.gle/KzDddSfk5SPZ9Ckq6"
-          className="text-lg font-bold hover:underline"
+          className="hover:underline"
         >
-          Join the Resonate Python SDK Waitlist! 🚀
-        </a>
+          Join the Waitlist!
+        </a>{" "}
+        🚀
       </div>
-      <nav className="border-zinc-200 bg-white px-4 lg:px-10">
-        <div></div>
-        <div className="flex flex-wrap items-center justify-between mx-auto py-5">
-          <a
-            href="/"
-            className="flex items-center space-x-2 rtl:space-x-reverse"
-          >
+
+      {/* Navbar */}
+      <nav className="bg-white border-b border-slate-200">
+        {/* Logo */}
+        <div className="flex justify-center py-4">
+          <a href="/" className="flex items-center">
             <Image
               src="/images/echo-logo.svg"
               alt="Resonate Logo"
-              className="max-h-[48px]"
-              height="432"
-              width="472"
-              layout="responsive"
+              height={40}
+              width={40}
+              className="max-h-[40px]"
             />
-            <span className="font-medium text-2xl whitespace-nowrap">
-              Resonate HQ
-            </span>
           </a>
-          <div className="flex items-center space-x-4">
-            <a
-              href="/features"
-              className="text-lg font-light hover:text-zinc-900"
-            >
-              Features
-            </a>
-            <a
-              href="https://docs.resonatehq.io"
-              className="text-lg font-light hover:text-zinc-900"
-            >
-              Docs
-            </a>
-            <a
-              href="https://blog.resonatehq.io"
-              className="text-lg font-light hover:text-zinc-900"
-            >
-              Blog
-            </a>
-            <a
-              href="https://resonatehq.io/discord"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Resonate HQ Discord"
-            >
-              <i
-                className="bx bx-md bxl-discord text-zinc-900 hover:text-zinc-900"
-                style={{ verticalAlign: "middle" }}
-              ></i>
-            </a>
-            <a
-              href="https://github.com/resonatehq/resonate"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Resonate GitHub"
-            >
-              <i
-                className="bx bx-md bxl-github text-zinc-900 hover:text-zinc-900"
-                style={{ verticalAlign: "middle" }}
-              ></i>
-            </a>
-          </div>
+        </div>
+
+        {/* Menu Button (Mobile) */}
+        <div className="flex justify-center lg:hidden mb-3">
+          <button
+            onClick={toggleMenu}
+            className="pb-2 pl-2 pr-2 text-slate-700 hover:text-zinc-400"
+          >
+            {isMenuOpen ? (
+              <span className="text-3xl font-bold">&times;</span> // Close Menu (X)
+            ) : (
+              <span className="text-3xl font-bold">&#9776;</span> // Hamburger Icon (3 lines)
+            )}
+          </button>
+        </div>
+
+        {/* Navigation Links */}
+        <div
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } lg:flex lg:flex-row lg:justify-center lg:space-x-8 text-center py-4`}
+        >
+          {/* Navigation Items */}
+          <a
+            href="/features"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            Features
+          </a>
+          <a
+            href="https://docs.resonatehq.io"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            Docs
+          </a>
+          <a
+            href="https://blog.resonatehq.io"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            Blog
+          </a>
+          <a
+            href="/webinars"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            Webinars
+          </a>
+          <a
+            href="/how-it-works"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            How it works
+          </a>
+          <a
+            href="https://resonatehq.io/discord"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resonate HQ Discord"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            Discord
+          </a>
+          <a
+            href="https://github.com/resonatehq/resonate"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resonate GitHub"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            GitHub
+          </a>
+          <a
+            href="/subscribe"
+            className="block py-2 lg:py-0 text-lg font-light text-slate-700 hover:text-slate-500 cursor-pointer"
+          >
+            Subscribe
+          </a>
         </div>
       </nav>
     </div>

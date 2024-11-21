@@ -82,7 +82,7 @@ const MailchimpForm = () => {
             type="submit"
             name="subscribe"
             id="mc-embedded-subscribe"
-            className="mb-12 text-white border bg-zinc-900 border-zinc-900 hover:bg-white hover:text-zinc-900 rounded-full px-5 py-2 lg:px-6 lg:py-2.5"
+            className="mt-12 text-white text-xl border bg-stone-900 hover:bg-stone-700 rounded-md px-6 py-2"
           >
             Subscribe
           </button>
