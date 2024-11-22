@@ -33,7 +33,7 @@ export default function Home() {
               <div className="text-slate-700 mx-auto flex flex-col items-center">
                 <div className="text-center">
                   {/* Smaller text on one line */}
-                  <p className="text-2xl sm:text-3xl font-light tracking-tight pb-12">
+                  <p className="text-xl sm:text-3xl font-light tracking-tight pb-12">
                     Built on the{" "}
                     <span className="md:ml-2 md:mr-2 font-bold">
                       Distributed Async Await
@@ -41,13 +41,13 @@ export default function Home() {
                   </p>
 
                   {/* Language with fade effect */}
-                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl">
+                  <h2 className="mb-12 text-3xl font-light tracking-tight sm:text-6xl">
                     open specification.
                   </h2>
-                  <p className="mt-3 font-light text-2xl">
+                  <p className="mt-3 font-light text-xl sm:text-2xl">
                     No proprietary primitives.
                   </p>
-                  <p className="mt-3 mb-12 font-light text-2xl">
+                  <p className="mt-3 mb-12 font-light text-xl sm:text-2xl">
                     Extend it to any technology stack.
                   </p>
                   <a href="https://github.com/resonatehq/durable-promise-specification">
@@ -82,20 +82,20 @@ export default function Home() {
                 <div className="text-center">
                   {/* Smaller text on one line */}
                   <p
-                    className={`text-2xl sm:text-3xl font-light tracking-tight pb-12`}
+                    className={`text-xl sm:text-3xl font-light tracking-tight pb-12`}
                   >
                     Concurrent, distributed, and{" "}
                     <span className="md:ml-2 md:mr-2 font-bold">durable</span>{" "}
                   </p>
 
                   {/* Language with fade effect */}
-                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl font-bold">
+                  <h2 className="mb-12 text-3xl font-light tracking-tight sm:text-6xl font-bold">
                     promises and functions.
                   </h2>
-                  <p className="mt-3 font-light text-2xl">
+                  <p className="mt-3 font-light text-xl sm:text-2xl">
                     Extending the async await programming model,
                   </p>
-                  <p className="mt-3 mb-12 font-light text-2xl">
+                  <p className="mt-3 mb-12 font-light text-xl sm:text-2xl">
                     distributed computing becomes a first-class citizen.
                   </p>
                   <a href="https://docs.resonatehq.io/concepts/distributed-async-await">
@@ -129,10 +129,10 @@ export default function Home() {
             <div className="relative overflow-hidden">
               <div className="text-slate-700 mx-auto flex flex-col items-center pb-24 pt-24">
                 <div className="text-center">
-                  <h2 className="mb-12 text-4xl font-bold tracking-tight sm:text-6xl font-light">
+                  <h2 className="mb-12 text-3xl font-bold tracking-tight sm:text-6xl font-light">
                     Fully decentralized.
                   </h2>
-                  <p className="mt-3 font-light text-2xl">
+                  <p className="mt-3 font-light text-xl sm:text-2xl">
                     No central element in the technology stack.
                   </p>
                 </div>
@@ -160,10 +160,10 @@ export default function Home() {
             <div className="relative overflow-hidden">
               <div className="text-slate-700 mx-auto flex flex-col items-center pb-24 pt-24">
                 <div className="text-center">
-                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl">
+                  <h2 className="mb-12 text-3xl font-light tracking-tight sm:text-6xl">
                     Free and open source.
                   </h2>
-                  <p className="mt-3 mb-12 font-light text-2xl">
+                  <p className="mt-3 mb-12 font-light text-xl sm:text-2xl">
                     Don&#39;t worry about vendor lock-in.
                   </p>
 
@@ -197,16 +197,16 @@ export default function Home() {
             <div className="relative overflow-hidden">
               <div className="text-slate-700 mx-auto flex flex-col items-center pb-24 pt-24 mb-12">
                 <div className="text-center">
-                  <h2 className="mb-12 text-4xl font-light tracking-tight sm:text-6xl">
+                  <h2 className="mb-12 text-3xl font-light tracking-tight sm:text-6xl">
                     More than
                     <br />
                     Durable Execution.
                   </h2>
 
-                  <p className="mt-3 font-light text-2xl">
+                  <p className="mt-3 font-light text-xl sm:text-2xl">
                     Durability without the complexity.
                   </p>
-                  <p className="mt-3 mb-12 font-light text-2xl">
+                  <p className="mt-3 mb-12 font-light text-xl sm:text-2xl">
                     Enjoy a dead simple programming model for the cloud.
                   </p>
                   <a href="/features">

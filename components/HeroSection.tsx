@@ -25,11 +25,11 @@ const HeroSection: React.FC = () => {
   return (
     <section className="overflow-hidden">
       <div className="relative overflow-hidden">
-        <div className="text-slate-700 mx-auto flex flex-col items-center pb-6 pt-24">
+        <div className="text-slate-700 mx-auto flex flex-col items-center pb-6 pt-6 sm:pt-24">
           <div className="text-center">
             {/* Smaller text on one line */}
             <h1
-              className={`text-2xl sm:text-4xl font-light tracking-tight pb-12`}
+              className={`text-xl sm:text-4xl font-light tracking-tight pb-12`}
             >
               Add <span className="md:ml-3 md:mr-3 font-bold">scalability</span>{" "}
               and <span className="md:ml-3 md:mr-3 font-bold">reliability</span>{" "}
@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
 
             {/* Language with fade effect */}
             <div className="relative inline-block mb-12">
-              <h1 className="text-6xl font-light tracking-tight sm:text-8xl">
+              <h1 className="text-4xl font-light tracking-tight sm:text-8xl">
                 <span
                   className={`transition-opacity duration-1000 ${
                     isFading ? "opacity-0" : "opacity-100"
@@ -59,10 +59,10 @@ const HeroSection: React.FC = () => {
               />
             </div>
 
-            <p className="mt-3 font-light text-2xl">
+            <p className="mt-3 font-light text-xl sm:text-2xl">
               Build with the language you love. ♥️
             </p>
-            <p className="mt-3 mb-12 font-light text-2xl">
+            <p className="mt-3 mb-12 font-light text-xl sm:text-2xl">
               Adopt platform-level recovery and coordination.
             </p>
             <a href="https://docs.resonatehq.io/get-started">

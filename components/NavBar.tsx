@@ -10,7 +10,7 @@ const NavBar: React.FC = () => {
   return (
     <div>
       {/* Announcement Bar */}
-      <div className="text-xl w-full bg-gradient-to-r bg-stone-900 text-white font-light text-center py-6">
+      <div className="text-xl w-full bg-gradient-to-r bg-stone-900 text-white font-light text-center py-2 sm:py-6">
         <a
           href="https://forms.gle/KzDddSfk5SPZ9Ckq6"
           className="hover:underline"
@@ -23,7 +23,7 @@ const NavBar: React.FC = () => {
       {/* Navbar */}
       <nav className="bg-white border-b border-slate-200">
         {/* Logo */}
-        <div className="flex justify-center py-6">
+        <div className="flex justify-center py-2 sm:py-6">
           <a href="/" className="flex items-center">
             <Image
               src="/images/echo-logo.svg"
@@ -36,7 +36,7 @@ const NavBar: React.FC = () => {
         </div>
 
         {/* Menu Button (Mobile) */}
-        <div className="flex justify-center lg:hidden mb-3">
+        <div className="flex justify-center lg:hidden sm:mb-3">
           <button
             onClick={toggleMenu}
             className="pb-2 pl-2 pr-2 text-slate-700 hover:text-zinc-400"
