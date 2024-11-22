@@ -23,11 +23,11 @@ export default function Features() {
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pt-16 text-slate-700">
               <div className="text-center">
-                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
+                <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
                   Subscribe
                 </h1>
 
-                <p className="mt-2 font-light text-2xl">
+                <p className="mt-2 font-light text-xl sm:text-2xl">
                   What do you get when you subscribe to Resonate HQ ?
                 </p>
                 <Image
@@ -39,7 +39,10 @@ export default function Features() {
                 />
                 <div className="text-left mt-12 px-12 text-center">
                   {benefits.map((benefit, index) => (
-                    <p key={index} className="text-2xl mt-3 font-light">
+                    <p
+                      key={index}
+                      className="text-xl sm:text-2xl mt-3 font-light"
+                    >
                       {benefit}
                     </p>
                   ))}

@@ -13,7 +13,7 @@ export default function TermsAndConditions() {
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
               <div className="text-center">
-                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
+                <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
                   Terms and Conditions
                 </h1>
 
@@ -32,8 +32,10 @@ export default function TermsAndConditions() {
             <div className="w-full max-w-screen sm:max-w-screen-2xl flex">
               <div className="flex flex-col text-left w-full px-4">
                 <div className="lg:pt-12 pb-8">
-                  <h3 className="text-2xl md:text-3xl pb-2">1. Introduction</h3>
-                  <p className="text-xl mt-3 font-light">
+                  <h3 className="text-lg font-semibold md:text-3xl pb-2">
+                    1. Introduction
+                  </h3>
+                  <p className="text-lg mt-3 font-light">
                     These Terms and Conditions (&quot;Terms&quot;) govern your
                     use of the Resonate HQ website, software, and services. By
                     accessing or using our services, you agree to comply with
@@ -41,10 +43,10 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
-                  <h3 className="text-2xl md:text-3xl pb-2">
+                  <h3 className="text-lg font-semibold md:text-2xl pb-2">
                     2. Intellectual Property
                   </h3>
-                  <p className="text-xl mt-3 font-light">
+                  <p className="text-lg mt-3 font-light">
                     All content, including text, graphics, and software, is the
                     property of Resonate HQ or its licensors. You may not use,
                     reproduce, or distribute our content without explicit
@@ -52,8 +54,10 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
-                  <h3 className="text-2xl md:text-3xl pb-2">3. User Conduct</h3>
-                  <p className="text-xl mt-3 font-light">
+                  <h3 className="text-lg font-semibold md:text-2xl pb-2">
+                    3. User Conduct
+                  </h3>
+                  <p className="text-lg mt-3 font-light">
                     You agree not to use our services for unlawful activities or
                     to violate the rights of others. This includes, but is not
                     limited to, engaging in activities such as hacking,
@@ -61,36 +65,40 @@ export default function TermsAndConditions() {
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
-                  <h3 className="text-2xl md:text-3xl pb-2">
+                  <h3 className="text-lg font-semibold md:text-2xl pb-2">
                     4. Limitations of Liability
                   </h3>
-                  <p className="text-xl mt-3 font-light">
+                  <p className="text-lg mt-3 font-light">
                     Resonate HQ is not liable for any damages arising from your
                     use of our services. Our services are provided &quot;as
                     is&quot; and without warranties of any kind.
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
-                  <h3 className="text-2xl md:text-3xl pb-2">5. Termination</h3>
-                  <p className="text-xl mt-3 font-light">
+                  <h3 className="text-lg font-semibold md:text-2xl pb-2">
+                    5. Termination
+                  </h3>
+                  <p className="text-lg mt-3 font-light">
                     We reserve the right to suspend or terminate your access to
                     our services at our sole discretion if you violate these
                     Terms.
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
-                  <h3 className="text-2xl md:text-3xl pb-2">
+                  <h3 className="text-lg font-semibold md:text-2xl  pb-2">
                     6. Changes to Terms
                   </h3>
-                  <p className="text-xl mt-3 font-light">
+                  <p className="text-lg mt-3 font-light">
                     Resonate HQ may update these Terms from time to time. Any
                     changes will be posted on this page with an updated
                     effective date.
                   </p>
                 </div>
                 <div className="lg:pt-12 pb-8">
-                  <h3 className="text-2xl md:text-3xl pb-2">7. Contact Us</h3>
-                  <p className="text-xl mt-3 font-light">
+                  <h3 className="text-lg font-semibold md:text-2xl  pb-2">
+                    7. Contact Us
+                  </h3>
+                  <p className="text-lg mt-3 font-light">
                     For questions or concerns about these Terms, please contact
                     us at{" "}
                     <span className="font-semibold">
