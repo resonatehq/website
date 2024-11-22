@@ -18,10 +18,10 @@ const ComparisonGrid = () => {
       {/* Table Header */}
       <div className="grid grid-cols-3 gap-6 text-center mb-8">
         <div></div> {/* Empty column for the row headers */}
-        <div className="text-xl font-bold text-slate-700">
+        <div className="text-lg sm:text-xl font-semibold text-slate-700">
           Formalization of Concurrent Structure
         </div>
-        <div className="text-xl font-bold text-slate-700">
+        <div className="text-lg sm:text-xl font-smibold text-slate-700">
           Formalization of Recovery
         </div>
       </div>
@@ -31,7 +31,7 @@ const ComparisonGrid = () => {
         {rows.map((row, rowIndex) => (
           <React.Fragment key={rowIndex}>
             {/* Row Title */}
-            <div className="flex items-center justify-center bg-gray-100 rounded-lg p-4 text-center font-bold text-slate-700 text-lg">
+            <div className="flex items-center justify-center bg-gray-100 rounded-lg p-4 text-center font-semibold text-slate-700 text-md sm:text-lg">
               {row.title}
             </div>
 
@@ -39,7 +39,7 @@ const ComparisonGrid = () => {
             {row.columns.map((column, colIndex) => (
               <div
                 key={colIndex}
-                className="flex items-center justify-center bg-gray-50 rounded-lg p-4 text-center font-light text-slate-700 text-lg border border-gray-200"
+                className="flex items-center justify-center bg-gray-50 rounded-lg p-4 text-center font-light text-slate-700 text-md sm:text-lg border border-gray-200"
               >
                 {column}
               </div>

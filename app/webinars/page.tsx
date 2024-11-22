@@ -15,11 +15,11 @@ export default function Features() {
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
               <div className="text-center text-slate-700">
-                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
+                <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
                   Webinars
                 </h1>
 
-                <p className="font-light text-2xl">
+                <p className="font-light text-xl sm:text-2xl">
                   Sign up for our upcoming webinars.
                 </p>
                 <Image
@@ -37,26 +37,27 @@ export default function Features() {
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
                 <div className="lg:pt-24 md:pt-24 pb-12 text-slate-700">
-                  <h2 className="text-4xl pb-2">
+                  <h2 className="text-2xl sm:text-4xl pb-2">
                     December <span className="font-bold">18th</span> 2024
                   </h2>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Join us for an hour long deep dive into a use case and
                     Resonate message passing.
                   </p>
 
-                  <p className="text-2xl mt-6 font-light">
+                  <p className="text-xl sm:text-2xl mt-6 font-light">
                     10:00 AM - 11:00 AM <span className="font-bold">PST</span>
                   </p>
                 </div>
-                <div className="container mx-auto px-4 py-8 text-center">
+                <div className="container mx-auto py-8 text-center">
                   {/* YouTube Video Embed */}
-                  <div className="relative overflow-hidden">
+                  <div className="relative overflow-hidden mx-auto max-w-screen-lg p-4">
                     <iframe
                       src="https://docs.google.com/forms/d/e/1FAIpQLScQ6F6eNdblqdEvzvW_igW1PlnmgeXbbL_GQtpOO2ZVeaPHWA/viewform?embedded=true"
-                      width="640"
-                      height="1080"
+                      className="w-full h-[70vh] sm:h-[80vh] md:h-[90vh]"
+                      style={{ minWidth: "300px", border: "none" }}
+                      allowFullScreen
                     >
                       Loading…
                     </iframe>
@@ -70,15 +71,15 @@ export default function Features() {
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
               <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center text-slate-700">
                 <div className="lg:pt-24 md:pt-24 pb-12">
-                  <h2 className="text-4xl pb-2">
+                  <h2 className="text-2xl sm:text-4xl pb-2">
                     November <span className="font-bold">6th</span> 2024
                   </h2>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     An hour long deep dive into the Resonate Python SDK.
                   </p>
 
-                  <p className="text-2xl mt-6 font-light">
+                  <p className="text-xl sm:text-2xl mt-6 font-light">
                     10:00 AM - 11:00 AM <span className="font-bold">PST</span>
                   </p>
                 </div>

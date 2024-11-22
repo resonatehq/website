@@ -15,11 +15,11 @@ export default function Home() {
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
               <div className="text-center text-slate-700">
-                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
+                <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
                   How it works
                 </h1>
 
-                <p className="font-light text-2xl">
+                <p className="font-light text-xl sm:text-2xl">
                   Resonate is built on the Distributed Async Await open
                   specification.
                 </p>
