@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <footer className="bg-white p-8 flex flex-col items-center">
-      <div className="flex flex-wrap justify-center space-x-4 px-4 py-2 mb-8 items-center">
+      <div className="flex flex-wrap justify-center space-x-8 sm:space-x-4 px-4 py-2 mb-8 items-center">
         <a
           href="/features"
           className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
