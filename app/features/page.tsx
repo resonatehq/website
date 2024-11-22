@@ -15,11 +15,11 @@ export default function Features() {
           <section className="overflow-hidden">
             <div className="mx-auto flex flex-col items-center pb-24 pt-16">
               <div className="text-center text-slate-700">
-                <h1 className="text-6xl pb-16 font-light tracking-tight sm:text-8xl">
+                <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
                   Features
                 </h1>
 
-                <p className="font-light text-2xl">
+                <p className="font-light text-xl sm:text-2xl">
                   What you get when you use{" "}
                   <span className="font-bold">Resonate</span>.
                 </p>
@@ -39,16 +39,16 @@ export default function Features() {
                     height="512"
                     width="512"
                   />
-                  <h2 className="text-5xl pb-2 font-light items-center">
+                  <h2 className="text-3xl sm:text-5xl pb-2 font-light items-center">
                     Sequential programming model
                   </h2>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Write <span className="font-bold">linear code</span> that
                     directly maps to your business logic.
                   </p>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Distribute functions to{" "}
                     <span className="font-bold">scale</span> with throughput.
                   </p>
@@ -74,16 +74,16 @@ export default function Features() {
                     height="512"
                     width="512"
                   />
-                  <h2 className="text-5xl pb-2 font-light items-center">
+                  <h2 className="text-3xl sm:text-5xl pb-2 font-light items-center">
                     Incremental adoption
                   </h2>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Low latecy <span className="font-bold">local storage</span>{" "}
                     by default.
                   </p>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Configurable{" "}
                     <span className="font-bold">remote storage</span> to survive
                     hard crashes.
@@ -110,16 +110,16 @@ export default function Features() {
                     height="512"
                     width="512"
                   />
-                  <h2 className="text-5xl pb-2 font-light">
+                  <h2 className="text-3xl sm:text-5xl pb-2 font-light">
                     Failure detection and recovery
                   </h2>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Configurable <span className="font-bold">retries</span> for
                     execution failures.
                   </p>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Distributed <span className="font-bold">resume</span> for
                     process crashes.
                   </p>
@@ -146,17 +146,17 @@ export default function Features() {
                     height="512"
                     width="512"
                   />
-                  <h2 className="text-5xl pb-2">
+                  <h2 className="text-3xl sm:text-5xl pb-2">
                     Built in transparent batching
                   </h2>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Take advantage of{" "}
                     <span className="font-bold">bulk operations</span>
                     {"  "}.
                   </p>
 
-                  <p className="text-2xl mt-3 font-light">
+                  <p className="text-xl sm:text-2xl mt-3 font-light">
                     Define a{" "}
                     <span className="font-bold">
                       data structure and handler
