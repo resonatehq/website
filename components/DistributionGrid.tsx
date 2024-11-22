@@ -67,7 +67,7 @@ const DistributionGrid = () => {
             <div className="text-xl font-light mb-2">{card.title}</div>
 
             {/* Image */}
-            <div className="mt-2 flex items-center justify-center">
+            <div className="p-1 flex items-center justify-center">
               {card.icon && !isSmallScreen ? (
                 <Image
                   src={card.icon}
