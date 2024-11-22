@@ -9,11 +9,11 @@ export default function Features() {
       <NavBar />
 
       <div className="flex flex-row justify-center w-full">
-        <div className="text-zinc-900 w-full max-w-[800px] px-4 lg:px-10">
+        <div className="text-zinc-900 w-full max-w-[800px] lg:px-10">
           {/* Hero */}
 
           <section className="overflow-hidden">
-            <div className="mx-auto flex flex-col items-center pb-24 pt-16">
+            <div className="mx-auto flex flex-col items-center px-4 pb-24 pt-16">
               <div className="text-center text-slate-700">
                 <h1 className="text-4xl pb-16 font-light tracking-tight sm:text-8xl">
                   Webinars
@@ -22,14 +22,15 @@ export default function Features() {
                 <p className="font-light text-xl sm:text-2xl">
                   Sign up for our upcoming webinars.
                 </p>
-                <Image
-                  src="/images/broadcast-mic.svg"
-                  alt="Icon"
-                  className="w-10 h-10 mx-auto my-4"
-                  width="512"
-                  height="512"
-                />
               </div>
+              <div className="mx-auto flex flex-col items-center"></div>
+              <Image
+                src="/images/broadcast-mic.svg"
+                alt="Icon"
+                className="w-10 h-10 mx-auto my-4"
+                width="512"
+                height="512"
+              />
             </div>
           </section>
 
@@ -52,7 +53,7 @@ export default function Features() {
                 </div>
                 <div className="container mx-auto py-8 text-center">
                   {/* YouTube Video Embed */}
-                  <div className="relative overflow-hidden mx-auto max-w-screen-lg p-4">
+                  <div className="relative overflow-hidden mx-auto max-w-screen-lg">
                     <iframe
                       src="https://docs.google.com/forms/d/e/1FAIpQLScQ6F6eNdblqdEvzvW_igW1PlnmgeXbbL_GQtpOO2ZVeaPHWA/viewform?embedded=true"
                       className="w-full h-[70vh] sm:h-[80vh] md:h-[90vh]"
