@@ -20,7 +20,7 @@ export default function Features() {
                 </h1>
 
                 <p className="font-light text-xl sm:text-2xl">
-                  Sign up for our upcoming webinars.
+                  RSVP to one of our upcoming webinars.
                 </p>
               </div>
               <div className="mx-auto flex flex-col items-center"></div>
