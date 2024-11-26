@@ -28,12 +28,12 @@ export default function RootLayout({
       <meta
         data-rh="true"
         property="og:image"
-        content="https://www.resonatehq.io/images/ogimage.png"
+        content="https://www.resonatehq.io/images/echo.png"
       />
       <meta
         data-rh="true"
         name="twitter:image"
-        content="https://www.resonatehq.io/images/ogimage.png"
+        content="https://www.resonatehq.io/images/echo.png"
       />
       <meta
         data-rh="true"
