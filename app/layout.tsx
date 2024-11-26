@@ -14,7 +14,8 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   title: "Resonate",
-  description: "a dead simple programming model for modern applications",
+  description:
+    "Holistic programming model for durable, scalable, and distributed cloud application development.",
 };
 
 export default function RootLayout({
@@ -27,12 +28,12 @@ export default function RootLayout({
       <meta
         data-rh="true"
         property="og:image"
-        content="https://www.resonatehq.io/images/echo.png"
+        content="https://www.resonatehq.io/images/ogimage.png"
       />
       <meta
         data-rh="true"
         name="twitter:image"
-        content="https://www.resonatehq.io/images/echo.png"
+        content="https://www.resonatehq.io/images/ogimage.png"
       />
       <meta
         data-rh="true"
