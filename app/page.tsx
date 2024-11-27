@@ -1,11 +1,8 @@
-import { amarante } from "@/styles/fonts";
 import Image from "next/image";
 import ConcurrencyGrid from "@/components/ConcurrencyGrid";
 import DistributionGrid from "@/components/DistributionGrid";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
-import InstallationGuide from "@/components/InstallationGuide";
-import CodeGuide from "@/components/CodeGuide";
 import HeroSection from "@/components/HeroSection";
 import ScrollingGraphs from "@/components/ScrollingGraphs";
 
