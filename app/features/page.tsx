@@ -180,18 +180,18 @@ export default function Features() {
                 <div className="lg:pt-24 md:pt-24 pb-12">
                   <h2 className="text-3xl md:text-5xl pb-2">
                     System{" "}
-                    <span className={amarante.className}>behavior tests</span>
+                    <span className="font-bold">behavior tests</span>
                   </h2>
 
                   <p className="text-xl mt-3 font-light">
                     Standard component
-                    <span className={`mx-2 ${amarante.className}`}>
+                    <span className="mx-2 font-bold">
                       mockability.
                     </span>
                   </p>
                   <p className="text-xl mt-3 font-light">
                     Verifiable system behavior with
-                    <span className={`mx-2 ${amarante.className}`}>
+                    <span className="mx-2 font-bold">
                       Deterministic Simulation Testing.
                     </span>
                   </p>

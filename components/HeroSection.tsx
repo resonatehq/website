@@ -4,8 +4,12 @@ import Image from "next/image";
 
 const HeroSection: React.FC = () => {
   const languages = [
-    { name: "Python", logo: "/images/python.svg" },
-    { name: "TypeScript", logo: "/images/typescript.svg" },
+    { name: "Python", logo: "/images/python.svg", link: "/python-sdk" },
+    {
+      name: "TypeScript",
+      logo: "/images/typescript.svg",
+      link: "typescript-sdk",
+    },
   ];
   const [currentLang, setCurrentLang] = useState(0);
   const [isFading, setIsFading] = useState(false);
@@ -44,7 +48,9 @@ const HeroSection: React.FC = () => {
                     isFading ? "opacity-0" : "opacity-100"
                   }`}
                 >
-                  {languages[currentLang].name}
+                  <a href={languages[currentLang].link}>
+                    {languages[currentLang].name}
+                  </a>
                 </span>
               </h1>
               {/* Logo positioned at the bottom right */}
