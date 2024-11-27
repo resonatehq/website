@@ -31,6 +31,30 @@ const Footer: React.FC = () => {
         </div>
         <div className="mx-auto">
           <a
+            href="/python-sdk"
+            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+          >
+            Python SDK
+          </a>
+        </div>
+        <div className="mx-auto">
+          <a
+            href="/typescript-sdk"
+            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+          >
+            TypeScript SDK
+          </a>
+        </div>
+        <div className="mx-auto">
+          <a
+            href="https://github.com/resonatehq/resonate"
+            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+          >
+            Server
+          </a>
+        </div>
+        <div className="mx-auto">
+          <a
             href="/webinars"
             className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
           >
@@ -43,6 +67,14 @@ const Footer: React.FC = () => {
             className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
           >
             How it works
+          </a>
+        </div>
+        <div className="mx-auto">
+          <a
+            href="https://github.com/resonatehq/durable-promise-specification"
+            className="text-slate-700 border-b border-transparent hover:border-slate-700 cursor-pointer hover:text-slate-500"
+          >
+            Durable Promise spec
           </a>
         </div>
         <div className="mx-auto">
