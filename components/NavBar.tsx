@@ -11,11 +11,8 @@ const NavBar: React.FC = () => {
     <div>
       {/* Announcement Bar */}
       <div className="text-xl w-full bg-gradient-to-r bg-stone-900 text-white font-light text-center py-2 sm:py-6">
-        <a
-          href="https://forms.gle/KzDddSfk5SPZ9Ckq6"
-          className="hover:underline"
-        >
-          Join the Waitlist!
+        <a href="/webinars" className="hover:underline">
+          RSVP to the next community event!
         </a>{" "}
         🚀
       </div>
