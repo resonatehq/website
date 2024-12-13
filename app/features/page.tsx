@@ -52,7 +52,7 @@ export default function Features() {
                     Distribute functions to{" "}
                     <span className="font-bold">scale</span> with throughput.
                   </p>
-                  <a href="https://docs.resonatehq.io/evaluate/features/sequential-programming-model">
+                  <a href="https://docs.resonatehq.io/evaluate/developer-experience/sequential-programming-model">
                     <button className="mt-12 inline-flex items-center justify-center rounded-md text-xl px-6 py-2 bg-stone-900 text-white hover:bg-stone-700">
                       Learn more
                     </button>
@@ -88,7 +88,7 @@ export default function Features() {
                     <span className="font-bold">remote storage</span> to survive
                     hard crashes.
                   </p>
-                  <a href="https://docs.resonatehq.io/evaluate/features/incremental-adoption">
+                  <a href="https://docs.resonatehq.io/evaluate/developer-experience/incremental-adoption">
                     <button className="mt-12 inline-flex items-center justify-center rounded-md text-xl px-6 py-2 bg-stone-900 text-white hover:bg-stone-700">
                       Learn more
                     </button>
