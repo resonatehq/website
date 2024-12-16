@@ -209,7 +209,7 @@ const PythonCodeExample = () => {
         <p className="text-slate-700 font-light text-center text-lg mt-12 mb-12">
           <a
             className="hover:underline underline-offset-4 font-light"
-            href="https://docs.resonatehq.io/get-started/typescript-quickstart-tutorial"
+            href="https://docs.resonatehq.io/get-started/typescript-quickstart"
           >
             Continue building an AI summarization agent with the quickstart
             tutorial.
