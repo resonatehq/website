@@ -33,6 +33,17 @@ export default function Features() {
               />
             </div>
           </section>
+          <section>
+            <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
+              <div className="flex flex-col text-center w-full px-4 lg:space-x-10 items-center">
+                <div className="lg:pt-24 md:pt-24 pb-12 text-slate-700">
+                  <h2 className="text-2xl sm:text-4xl pb-2">
+                    Next Webinar TBD
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </section>
 
           <section>
             <div className="w-full max-w-screen sm:max-w-screen-2xl  flex mb-24">
@@ -43,8 +54,7 @@ export default function Features() {
                   </h2>
 
                   <p className="text-xl sm:text-2xl mt-3 font-light">
-                    Join us for an hour long deep dive into a use case and
-                    Resonate message passing.
+                    Explore a use case and Resonate protocols.
                   </p>
 
                   <p className="text-xl sm:text-2xl mt-6 font-light">
@@ -53,15 +63,15 @@ export default function Features() {
                 </div>
                 <div className="container mx-auto py-8 text-center">
                   {/* YouTube Video Embed */}
-                  <div className="relative overflow-hidden mx-auto max-w-screen-lg">
+                  <div className="relative overflow-hidden pb-[56.25%] mb-8">
                     <iframe
-                      src="https://docs.google.com/forms/d/e/1FAIpQLScQ6F6eNdblqdEvzvW_igW1PlnmgeXbbL_GQtpOO2ZVeaPHWA/viewform?embedded=true"
-                      className="w-full h-[70vh] sm:h-[80vh] md:h-[90vh]"
-                      style={{ minWidth: "300px", border: "none" }}
+                      src="https://www.youtube.com/embed/X1iGwYSocq0?si=ro2rzUJFQvuYUy15"
+                      title="YouTube video player"
+                      className="absolute top-0 left-0 w-full h-full"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
-                    >
-                      Loading…
-                    </iframe>
+                    ></iframe>
                   </div>
                 </div>
               </div>
